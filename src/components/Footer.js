@@ -7,8 +7,8 @@ export default function Footer() {
       <footer>
         <div className="footer-brand">
           <Link href="/" className="logo" style={{ marginBottom: "12px" }}>
-            <Image 
-              src="/logo.png" 
+            <img 
+              src="/logo.png?v=2"  
               alt="Digital Marketing TenX" 
               width={56} 
               height={56} 
