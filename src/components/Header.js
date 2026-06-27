@@ -68,13 +68,13 @@ export default function Header() {
     <>
       <nav className="header-nav">
         <Link href="/" className="logo" onClick={handleLinkClick}>
-          <Image 
-            src="/logo.png" 
+          <img 
+            src="/logo.png?v=2" 
             alt="Digital Marketing TenX" 
             width={56} 
             height={56} 
             className="logo-img-file"
-            priority
+            
           />
           <span className="brand-name">
             Digital Marketing <span className="brand-highlight">TenX</span>
@@ -155,7 +155,7 @@ export default function Header() {
       <div className={`ga-mobile-drawer ${isMobileMenuOpen ? "open" : ""}`}>
         <div className="drawer-header">
           <div className="logo">
-            <Image src="/logo.png" alt="TenX" width={40} height={40} />
+            <img src="/logo.png?v=2" alt="TenX" width={40} height={40} />
             <span className="brand-name" style={{ fontWeight: 800, fontSize: "15px" }}>TenX Menu</span>
           </div>
           <button className="drawer-close-btn" onClick={handleLinkClick}>✕</button>
