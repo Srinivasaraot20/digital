@@ -6,6 +6,7 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import { openWhatsAppQuote } from "@/lib/whatsappQuote";
 import "./whatsapp-automation.css";
 
 // Reusable Animated Counter component for stats
@@ -330,7 +331,7 @@ export default function WhatsAppAutomationPage() {
                 <button className="btn-primary" onClick={() => window.dispatchEvent(new CustomEvent("trigger-consultation-modal", { detail: { service: "WhatsApp Automation" } }))}>
                   📅 Book Free Consultation
                 </button>
-                <button className="btn-outline" onClick={() => window.open("https://wa.me/919392251739?text=I'd%20like%20to%20request%20a%20live%20demo%20of%20WhatsApp%20Automation", "_blank")}>
+                <button className="btn-outline" onClick={() => openWhatsAppQuote("WhatsApp Automation – Live Demo")}>
                   ▶ Request Live Demo
                 </button>
               </div>
@@ -1230,7 +1231,7 @@ export default function WhatsAppAutomationPage() {
                   <button className="btn-primary" onClick={() => window.dispatchEvent(new CustomEvent("trigger-consultation-modal", { detail: { service: "WhatsApp Automation" } }))}>
                     📅 Book Free Consultation
                   </button>
-                  <button className="btn-outline" style={{ background: "transparent", color: "#fff", borderColor: "#fff" }} onClick={() => window.open("https://wa.me/919392251739?text=I'd%20like%20to%20request%20a%20live%20demo%20of%20WhatsApp%20Automation", "_blank")}>
+                  <button className="btn-outline" style={{ background: "transparent", color: "#fff", borderColor: "#fff" }} onClick={() => openWhatsAppQuote("WhatsApp Automation – Live Demo")}>
                     ▶ Schedule Live Demo
                   </button>
                 </div>

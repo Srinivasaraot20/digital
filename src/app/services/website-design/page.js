@@ -6,6 +6,7 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import { openWhatsAppQuote } from "@/lib/whatsappQuote";
 import "./website-design.css";
 
 // Reusable Animated Counter component for metrics
@@ -1081,7 +1082,7 @@ export default function WebsiteDesignPage() {
                   
                   <div className="w-type-meta">
                     <span className="w-type-timeline">⏳ {sub.timeline}</span>
-                    <button className="w-type-cta" onClick={() => window.open("https://wa.me/919392251739", "_blank")}>
+                    <button className="w-type-cta" onClick={() => openWhatsAppQuote(sub.title)}>
                       Get Quote
                     </button>
                   </div>
@@ -1518,7 +1519,7 @@ export default function WebsiteDesignPage() {
                   <li>Sub-second loading optimizations</li>
                   <li>1 week delivery timeline</li>
                 </ul>
-                <button className="btn-primary w-price-btn-stretch" onClick={() => window.open("https://wa.me/919392251739?text=I'm%20interested%20in%20the%20Starter%20Landing%20Page%20package", "_blank")}>
+                <button className="btn-primary w-price-btn-stretch" onClick={() => openWhatsAppQuote("High-Converting Landing Page")}>
                   📅 Get Started Now
                 </button>
               </div>
@@ -1538,7 +1539,7 @@ export default function WebsiteDesignPage() {
                   <li>3 weeks delivery timeline</li>
                   <li>1 month post-launch support</li>
                 </ul>
-                <button className="btn-primary w-price-btn-stretch" onClick={() => window.open("https://wa.me/919392251739?text=I'm%20interested%20in%20the%20Premium%20Corporate%20Website%20package", "_blank")}>
+                <button className="btn-primary w-price-btn-stretch" onClick={() => openWhatsAppQuote("Premium Corporate Website")}>
                   📅 Get Started Now
                 </button>
               </div>
@@ -1558,7 +1559,7 @@ export default function WebsiteDesignPage() {
                   <li>Custom sprint delivery timeline</li>
                   <li>3 months priority tech support</li>
                 </ul>
-                <button className="btn-primary w-price-btn-stretch" onClick={() => window.open("https://wa.me/919392251739?text=I'm%20interested%20in%20the%20Custom%20SaaS%20and%20Web%20Platform%20package", "_blank")}>
+                <button className="btn-primary w-price-btn-stretch" onClick={() => openWhatsAppQuote("Custom SaaS & Web Platform")}>
                   📅 Get Started Now
                 </button>
               </div>

@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Social Media Marketing Services | Grow Your Brand & Generate Leads",
-  description: "Boost your brand with professional Social Media Marketing services. We create engaging content, manage campaigns, grow your audience, and generate qualified leads on Instagram, Facebook, LinkedIn, YouTube, TikTok, and more.",
+  title: "Social Media Marketing Agency Madhapur | Grow Your Brand & Generate Leads | TenX",
+  description: "Boost your brand with our professional social media marketing agency in Madhapur. We manage Facebook ads, Instagram campaigns, and LinkedIn B2B strategy to grow your audience and generate qualified leads.",
   alternates: {
     canonical: "https://digitalmarketingtenx.com/services/social-media-marketing",
   },

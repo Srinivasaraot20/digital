@@ -6,6 +6,7 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import { openWhatsAppQuote } from "@/lib/whatsappQuote";
 import "./social-media-marketing.css";
 
 // Reusable Animated Counter component
@@ -468,7 +469,7 @@ export default function SocialMediaMarketingPage() {
             <button className="btn-brand-primary" onClick={() => window.dispatchEvent(new CustomEvent("trigger-consultation-modal", { detail: { service: "Social Media Marketing" } }))}>
               📅 Book Free Consultation
             </button>
-            <button className="btn-brand-outline" onClick={() => window.open("https://wa.me/919392251739", "_blank")}>
+            <button className="btn-brand-outline" onClick={() => openWhatsAppQuote("Social Media Marketing")}>
               📄 Request Proposal
             </button>
           </div>
@@ -1481,12 +1482,10 @@ export default function SocialMediaMarketingPage() {
               Let's map out a customized marketing strategy to increase followers, organic reach, and qualified leads.
             </p>
             <div className="cta-card-buttons">
-              <button className="btn-primary" onClick={() => window.open("https://wa.me/919392251739", "_blank")}>
+              <button className="btn-primary" onClick={() => window.dispatchEvent(new CustomEvent("trigger-consultation-modal"))}>
                 📅 Book Free Consultation
               </button>
-              <button className="btn-outline" onClick={() => window.open("https://wa.me/919392251739", "_blank")}>
-                ▶ Contact Us
-              </button>
+              <a href="/contact" className="btn-outline">▶ Contact Us</a>
             </div>
           </div>
         </div>

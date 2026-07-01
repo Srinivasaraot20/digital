@@ -129,7 +129,7 @@ export default function ServicesPage() {
       ],
       benefits: ["Higher Rankings", "More Organic Traffic", "Long-Term Growth", "Better Visibility"],
       ctaText: "Explore SEO →",
-      ctaLink: "#"
+      ctaLink: "/seo-services"
     },
     {
       id: "social-media",
@@ -169,7 +169,7 @@ export default function ServicesPage() {
       ],
       benefits: ["More Sales", "Higher Conversion Rate", "Better Customer Retention", "Increased Revenue"],
       ctaText: "Explore E-Commerce →",
-      ctaLink: "#"
+      ctaLink: "/services/e-commerce-marketing"
     },
     {
       id: "whatsapp-automation",
@@ -779,77 +779,7 @@ export default function ServicesPage() {
                 </div>
               </div>
 
-              {/* Bottom 5 Statistics Horizontal Card */}
-              <div className="s-hero-stats-card">
-                <div className="s-stat-item">
-                  <div className="s-stat-icon purple">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M22 2V8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
-                    </svg>
-                  </div>
-                  <div className="s-stat-info">
-                    <h4><AnimatedCounter value="500+" /></h4>
-                    <p>Projects Delivered</p>
-                  </div>
-                </div>
-                
-                <div className="s-stat-item">
-                  <div className="s-stat-icon green">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                      <circle cx="9" cy="7" r="4"></circle>
-                      <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                      <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                    </svg>
-                  </div>
-                  <div className="s-stat-info">
-                    <h4><AnimatedCounter value="150+" /></h4>
-                    <p>Happy Clients</p>
-                  </div>
-                </div>
-                
-                <div className="s-stat-item">
-                  <div className="s-stat-icon orange">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                      <polyline points="9 11 11 13 15 9"></polyline>
-                    </svg>
-                  </div>
-                  <div className="s-stat-info">
-                    <h4><AnimatedCounter value="97%" /></h4>
-                    <p>Client Retention</p>
-                  </div>
-                </div>
-                
-                <div className="s-stat-item">
-                  <div className="s-stat-icon blue">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                      <line x1="18" y1="20" x2="18" y2="10"></line>
-                      <line x1="12" y1="20" x2="12" y2="4"></line>
-                      <line x1="6" y1="20" x2="6" y2="14"></line>
-                      <path d="M3 18l6-6 4 4 8-8"></path>
-                      <polyline points="17 8 21 8 21 12"></polyline>
-                    </svg>
-                  </div>
-                  <div className="s-stat-info">
-                    <h4><AnimatedCounter value="10X" /></h4>
-                    <p>Business Growth</p>
-                  </div>
-                </div>
-                
-                <div className="s-stat-item">
-                  <div className="s-stat-icon pink">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                      <circle cx="12" cy="12" r="10"></circle>
-                      <polygon points="12 8 15 11 12 14 9 11 12 8"></polygon>
-                    </svg>
-                  </div>
-                  <div className="s-stat-info">
-                    <h4><AnimatedCounter value="50+" /></h4>
-                    <p>Industries Served</p>
-                  </div>
-                </div>
-              </div>
+              
             </div>
           </div>
         </section>
@@ -1006,36 +936,7 @@ export default function ServicesPage() {
           </div>
         </section>
 
-        {/* SECTION 6: RESULTS */}
-        <section className="results-section">
-          <div className="results-grid">
-            <div className="result-card">
-              <div className="result-num">
-                <AnimatedCounter value="500+" />
-              </div>
-              <div className="result-label">Projects Delivered</div>
-            </div>
-            <div className="result-card">
-              <div className="result-num">
-                <AnimatedCounter value="150+" />
-              </div>
-              <div className="result-label">Happy Clients</div>
-            </div>
-            <div className="result-card">
-              <div className="result-num">
-                <AnimatedCounter value="97%" />
-              </div>
-              <div className="result-label">Client Retention Rate</div>
-            </div>
-            <div className="result-card">
-              <div className="result-num">
-                <AnimatedCounter value="10X" />
-              </div>
-              <div className="result-label">Average Business Growth</div>
-            </div>
-          </div>
-        </section>
-
+        
         {/* SECTION 7: FAQ */}
         <section className="services-section section-white">
           <div className="radial-glow glow-orange-right" style={{ top: "20%" }}></div>
