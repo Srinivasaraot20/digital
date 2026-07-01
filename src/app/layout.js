@@ -27,9 +27,12 @@ export default function RootLayout({ children }) {
       "availableLanguage": ["en", "tel", "hi"]
     },
     "sameAs": [
-      "https://facebook.com/digitalmarketingtenx",
-      "https://instagram.com/digitalmarketingtenx",
-      "https://linkedin.com/company/digitalmarketingtenx"
+      "https://www.facebook.com/profile.php?id=61590692422833",
+      "https://www.instagram.com/digitalmarketingtenx?utm_source=qr&igsh=MW5zcmVoOWhlZ3M3ag==",
+      "https://linkedin.com/in/digitalmarketing-tenx-8278b440b",
+      "https://medium.com/@digitalmarketingtenx",
+      "https://x.com/DigitalTenx9",
+      "https://www.quora.com/profile/DIGITAL-MARKEING-TEN-X"
     ]
   };
 
