@@ -937,6 +937,33 @@ export default function ServicesPage() {
         </section>
 
         
+        {/* SECTION 8: FUTURE SERVICES TO CONSIDER */}
+        <section className="services-section section-light future-services-section">
+          <div className="services-grid-content">
+            <div className="sec-title-centered">
+              <span className="eyebrow">Specialized Competencies</span>
+              <h2>Future Services to Consider</h2>
+              <p>
+                As your agency partner grows, we continuously expand our technical offerings to help you leverage modern channels.
+              </p>
+            </div>
+
+            <div className="future-services-grid">
+              {futureServices.map((svc, idx) => (
+                <div className="future-service-card glass-card" key={idx}>
+                  <div className="future-icon-box" style={{ backgroundColor: svc.iconBg }}>
+                    {svc.icon}
+                  </div>
+                  <div className="future-card-content">
+                    <h3>{svc.title}</h3>
+                    <span className={`future-service-tag ${svc.tagClass}`}>{svc.tag}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* SECTION 7: FAQ */}
         <section className="services-section section-white">
           <div className="radial-glow glow-orange-right" style={{ top: "20%" }}></div>
@@ -958,33 +985,6 @@ export default function ServicesPage() {
                   </button>
                   <div className="faq-answer">
                     <p>{faq.a}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* SECTION 8: FUTURE SERVICES TO CONSIDER */}
-        <section className="services-section section-light future-services-section">
-          <div className="services-grid-content">
-            <div className="sec-title-centered">
-              <span className="eyebrow">Specialized Competencies</span>
-              <h2>Future Services to Consider</h2>
-              <p>
-                As your agency partner grows, we continuously expand our technical offerings to help you leverage modern channels.
-              </p>
-            </div>
-
-            <div className="future-services-grid">
-              {futureServices.map((svc, idx) => (
-                <div className="future-service-card glass-card" key={idx}>
-                  <div className="future-icon-box" style={{ backgroundColor: svc.iconBg }}>
-                    {svc.icon}
-                  </div>
-                  <div className="future-card-content">
-                    <h3>{svc.title}</h3>
-                    <span className={`future-service-tag ${svc.tagClass}`}>{svc.tag}</span>
                   </div>
                 </div>
               ))}
