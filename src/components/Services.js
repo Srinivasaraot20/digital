@@ -22,7 +22,7 @@ export default function Services() {
       title: "SEO",
       desc: "Improve your website ranking and reach more customers through search engines.",
       bgColor: "#f0fdf4",
-      href: "/services#seo",
+      href: "/seo-services",
     },
     {
       icon: "/smm.png",

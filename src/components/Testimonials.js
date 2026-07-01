@@ -3,32 +3,11 @@ export default function Testimonials() {
     {
       type: "card",
       stars: "★★★★★",
-      text: "Digital Marketing TenX transformed our business. Our website traffic increased by 450%, and leads by 300% in just 4 months!",
-      avatar: "R",
-      avatarColor: "#ff6b00",
-      name: "Rahul Sharma",
-      role: "Real Estate Business"
-    },
-    {
-      type: "video"
-    },
-    {
-      type: "card",
-      stars: "★★★★★",
       text: "Amazing team! They understand our needs and deliver results beyond expectations. Highly recommended.",
       avatar: "N",
-      avatarColor: "#4267B2",
+      avatarColor: "#3b5998",
       name: "Neha Patel",
       role: "Healthcare Clinic"
-    },
-    {
-      type: "card",
-      stars: "★★★★★",
-      text: "Our B2B lead generation campaign exceeded all targets. 10/10 recommend Digital Marketing TenX for scaling!",
-      avatar: "P",
-      avatarColor: "#8b5cf6",
-      name: "Priya Nair",
-      role: "Tech Startup Founder"
     },
     {
       type: "card",
@@ -42,7 +21,7 @@ export default function Testimonials() {
     {
       type: "card",
       stars: "★★★★★",
-      text: "Their Google Ads strategy helped us scale our admissions during peak admission season. High ROI!",
+      text: "Their Google Ads strategy helped us scale our admissions during peak admission season. Highly recommended.",
       avatar: "A",
       avatarColor: "#f59e0b",
       name: "Amit Verma",
@@ -53,10 +32,19 @@ export default function Testimonials() {
   const doubleList = [...testimonials, ...testimonials];
 
   return (
-    <section className="testimonials">
-      <div className="sec-header">
-        <span className="eyebrow">+ TESTIMONIALS</span>
-        <h2>What Our Clients Say</h2>
+    <section className="testimonials reveal-element">
+      <div className="process-header" style={{ marginBottom: "36px" }}>
+        <div className="process-eyebrow">
+          <span className="eyebrow-line"></span>
+          TESTIMONIALS
+          <span className="eyebrow-line"></span>
+        </div>
+        <h2 className="process-title">
+          What Our <span className="highlight-work">Clients Say</span>
+        </h2>
+        <p className="process-subtitle">
+          Real feedback from healthcare clinics, education brands, and e-commerce stores scaling with us.
+        </p>
       </div>
       <div className="testimonials-track-container">
         <div className="testimonials-track">

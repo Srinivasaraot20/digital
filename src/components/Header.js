@@ -18,7 +18,7 @@ const serviceMenuItems = [
   },
   {
     title: "SEO",
-    href: "/services#seo",
+    href: "/seo-services",
     icon: "/seo.png",
   },
   {
@@ -28,7 +28,7 @@ const serviceMenuItems = [
   },
   {
     title: "E-Commerce Marketing",
-    href: "/services#e-commerce",
+    href: "/services/e-commerce-marketing",
     icon: "/e-commerce.png",
   },
   {
@@ -68,14 +68,16 @@ export default function Header() {
     <>
       <nav className="header-nav">
         <Link href="/" className="logo" onClick={handleLinkClick}>
-          <img 
-            src="/logo.png?v=2" 
-            alt="Digital Marketing TenX" 
-            width={56} 
-            height={56} 
-            className="logo-img-file"
-            
-          />
+          <picture>
+            <source srcSet="/logo.webp" type="image/webp" />
+            <img 
+              src="/logo.png" 
+              alt="Digital Marketing TenX" 
+              width={56} 
+              height={56} 
+              className="logo-img-file"
+            />
+          </picture>
           <span className="brand-name">
             Digital Marketing <span className="brand-highlight">TenX</span>
           </span>
@@ -128,8 +130,9 @@ export default function Header() {
             </div>
           </div>
 
-          <a href="#">Blog</a>
-          <a href="#">Contact</a>
+          <Link href="/blog" className={pathname.startsWith('/blog') ? 'active' : ''} onClick={handleLinkClick}>Blog</Link>
+          <Link href="/contact">Contact</Link>
+          
         </div>
 
         <button className="btn-primary desktop-only-btn" onClick={() => window.dispatchEvent(new CustomEvent("trigger-consultation-modal"))}>📅 Book Free Consultation</button>
@@ -155,7 +158,10 @@ export default function Header() {
       <div className={`ga-mobile-drawer ${isMobileMenuOpen ? "open" : ""}`}>
         <div className="drawer-header">
           <div className="logo">
-            <img src="/logo.png?v=2" alt="TenX" width={40} height={40} />
+            <picture>
+              <source srcSet="/logo.webp" type="image/webp" />
+              <img src="/logo.png" alt="TenX" width={40} height={40} />
+            </picture>
             <span className="brand-name" style={{ fontWeight: 800, fontSize: "15px" }}>TenX Menu</span>
           </div>
           <button className="drawer-close-btn" onClick={handleLinkClick}>✕</button>
@@ -212,8 +218,9 @@ export default function Header() {
               </div>
             </div>
 
-            <a href="#" onClick={handleLinkClick}>Blog</a>
-            <a href="#" onClick={handleLinkClick}>Contact</a>
+            <Link href="/blog" onClick={handleLinkClick} className={pathname.startsWith('/blog') ? 'active' : ''}>Blog</Link>
+            <Link href="/contact" onClick={handleLinkClick}>Contact</Link>
+            <Link href="/admin/login" onClick={handleLinkClick} style={{ color: '#ff6b00', fontWeight: 'bold' }}>Admin Login</Link>
           </div>
 
           {/* Contact quick actions */}

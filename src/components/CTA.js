@@ -56,9 +56,9 @@ export default function CTA() {
             <button className="btn-primary" onClick={() => window.dispatchEvent(new CustomEvent("trigger-consultation-modal"))}>
               📅 Book Free Consultation
             </button>
-            <button className="btn-outline" onClick={() => window.open("mailto:info@digitalmarketingtenx.com")}>
+            <a href="/contact" className="btn-outline">
               ▶ Contact Us
-            </button>
+            </a>
           </div>
         </div>
       </div>

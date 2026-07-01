@@ -109,13 +109,24 @@ export default function SEOContent() {
               <div className="seo-faq-accordion">
                 {faqs.map((faq, idx) => (
                   <div key={idx} className={`seo-faq-item ${openIndex === idx ? "open" : ""}`}>
-                    <button className="seo-faq-question-btn" onClick={() => toggleFaq(idx)}>
+                    <button 
+                      id={`faq-btn-${idx}`}
+                      className="seo-faq-question-btn" 
+                      onClick={() => toggleFaq(idx)}
+                      aria-expanded={openIndex === idx}
+                      aria-controls={`faq-answer-${idx}`}
+                    >
                       <span>{faq.q}</span>
                       <svg className="chevron-icon" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
                     </button>
-                    <div className="seo-faq-answer">
+                    <div 
+                      id={`faq-answer-${idx}`}
+                      className="seo-faq-answer"
+                      role="region"
+                      aria-labelledby={`faq-btn-${idx}`}
+                    >
                       <p>{faq.a}</p>
                     </div>
                   </div>
