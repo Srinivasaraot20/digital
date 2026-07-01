@@ -31,7 +31,7 @@
 }
 
 .ecom-page h2 {
-  font-size: 38px;
+  font-size: clamp(1.6rem, 4vw, 2.5rem);
   font-weight: 800;
   line-height: 1.25;
   letter-spacing: -0.8px;
@@ -41,7 +41,7 @@
 .ecom-page p {
   color: var(--ecom-text-muted);
   line-height: 1.7;
-  font-size: 15px;
+  font-size: clamp(11px, 3vw, 15px);
 }
 
 .ecom-section {
@@ -85,7 +85,7 @@
 }
 
 .ecom-title-center p {
-  font-size: 16px;
+  font-size: clamp(12px, 3vw, 16px);
   max-width: 580px;
   margin: 0 auto;
 }
@@ -94,7 +94,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-size: 11px;
+  font-size: clamp(11px, 2vw, 13px);
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 1.2px;
@@ -180,7 +180,7 @@
 }
 
 .ecom-hero h1 {
-  font-size: 54px;
+  font-size: clamp(42px, 5vw, 54px);
   font-weight: 900;
   line-height: 1.1;
   letter-spacing: -2px;
@@ -190,7 +190,7 @@
 
 @media (max-width: 768px) {
   .ecom-hero h1 {
-    font-size: 40px;
+    font-size: clamp(28px, 5vw, 40px);
     letter-spacing: -1px;
   }
 }
@@ -203,7 +203,7 @@
 }
 
 .ecom-hero p {
-  font-size: 17px;
+  font-size: clamp(13px, 3vw, 17px);
   color: var(--ecom-text-muted);
   max-width: 540px;
   line-height: 1.7;
@@ -234,7 +234,7 @@
   background: linear-gradient(135deg, var(--ecom-purple) 0%, var(--ecom-purple-hover) 100%);
   color: #ffffff;
   padding: 15px 30px;
-  font-size: 14px;
+  font-size: clamp(14px, 2vw, 16px);
   font-weight: 700;
   border-radius: 12px;
   display: inline-flex;
@@ -256,7 +256,7 @@
   background: linear-gradient(135deg, var(--ecom-orange) 0%, var(--ecom-orange-hover) 100%);
   color: #ffffff;
   padding: 15px 30px;
-  font-size: 14px;
+  font-size: clamp(14px, 2vw, 16px);
   font-weight: 700;
   border-radius: 12px;
   display: inline-flex;
@@ -342,17 +342,17 @@
   border-radius: 16px;
   border: 1px solid rgba(0, 0, 0, 0.08);
   width: 100%;
-  height: 480px;
+  min-height: 480px; height: auto;
   overflow: hidden;
   text-align: left;
-  font-size: 10px;
+  font-size: clamp(10px, 2vw, 12px);
   box-shadow: var(--ecom-shadow-lg);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 /* Sidebar Styling */
 .ecom-mock-sidebar {
-  width: 145px;
+  max-width: 145px; width: 100%;
   background: linear-gradient(185deg, #0b0f19 0%, #1e1b4b 100%);
   padding: 14px 10px;
   display: flex;
@@ -367,7 +367,7 @@
   align-items: center;
   color: #ffffff;
   font-weight: 800;
-  font-size: 11px;
+  font-size: clamp(11px, 2vw, 13px);
   letter-spacing: -0.3px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   padding-bottom: 10px;
@@ -379,7 +379,7 @@
   color: #10b981;
   padding: 1px 4px;
   border-radius: 4px;
-  font-size: 7px;
+  font-size: clamp(7px, 2vw, 9px);
   font-weight: 800;
   margin-left: auto;
 }
@@ -409,7 +409,7 @@
 }
 
 .ecom-mock-menu-item span {
-  font-size: 11px;
+  font-size: clamp(11px, 2vw, 13px);
 }
 
 /* Sidebar Promo Box */
@@ -427,7 +427,7 @@
 .ecom-mock-promo-title {
   color: #ffffff;
   font-weight: 800;
-  font-size: 9px;
+  font-size: clamp(9px, 2vw, 11px);
   margin-bottom: 2px;
   display: flex;
   align-items: center;
@@ -523,7 +523,7 @@
   border: 1px solid #e2e8f0;
   border-radius: 6px;
   padding: 4px 8px;
-  font-size: 8px;
+  font-size: clamp(8px, 2vw, 10px);
   font-weight: 700;
   color: var(--ecom-text-muted);
   display: flex;
@@ -534,7 +534,7 @@
 .ecom-mock-notifications {
   position: relative;
   cursor: pointer;
-  font-size: 11px;
+  font-size: clamp(11px, 2vw, 13px);
 }
 
 .ecom-mock-notif-badge {
@@ -545,7 +545,7 @@
   height: 10px;
   background: #ef4444;
   color: #ffffff;
-  font-size: 6px;
+  font-size: clamp(6px, 2vw, 8px);
   font-weight: 800;
   border-radius: 50%;
   display: flex;
@@ -582,7 +582,7 @@
 .ecom-mock-user-name {
   font-weight: 700;
   color: var(--ecom-text-dark);
-  font-size: 8px;
+  font-size: clamp(8px, 2vw, 10px);
 }
 
 .ecom-mock-user-role {
@@ -603,7 +603,7 @@
 /* 4 KPI Grid */
 .ecom-mock-kpis {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
   gap: 8px;
 }
 
@@ -632,7 +632,7 @@
 }
 
 .ecom-kpi-val {
-  font-size: 13px;
+  font-size: clamp(13px, 2vw, 15px);
   font-weight: 900;
   color: var(--ecom-text-dark);
 }
@@ -700,7 +700,7 @@
 }
 
 .ecom-chart-meta-val {
-  font-size: 13px;
+  font-size: clamp(13px, 2vw, 15px);
   font-weight: 900;
   color: var(--ecom-text-dark);
   margin-top: 1px;
@@ -769,22 +769,22 @@
 }
 
 .ecom-donut-center-title {
-  font-size: 6px;
+  font-size: clamp(6px, 2vw, 8px);
   color: var(--ecom-text-light);
   font-weight: 600;
 }
 
 .ecom-donut-center-val {
-  font-size: 9px;
+  font-size: clamp(9px, 2vw, 11px);
   font-weight: 900;
   color: var(--ecom-text-dark);
 }
 
 .ecom-donut-legend-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   gap: 3px;
-  font-size: 7px;
+  font-size: clamp(7px, 2vw, 9px);
   font-weight: 700;
   color: var(--ecom-text-muted);
   margin-top: 4px;
@@ -830,7 +830,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 20px;
+  font-size: clamp(16px, 3vw, 20px);
   margin-bottom: 4px;
   position: relative;
   overflow: hidden;
@@ -839,7 +839,7 @@
 .ecom-mock-prod-name {
   font-weight: 800;
   color: var(--ecom-text-dark);
-  font-size: 9px;
+  font-size: clamp(9px, 2vw, 11px);
   margin-bottom: 2px;
   white-space: nowrap;
   overflow: hidden;
@@ -871,7 +871,7 @@
 }
 
 .ecom-mock-prod-status {
-  font-size: 7px;
+  font-size: clamp(7px, 2vw, 9px);
   color: #10b981;
   font-weight: 800;
   background: rgba(16, 185, 129, 0.08);
@@ -884,7 +884,7 @@
 /* Bottom Tables Grid */
 .ecom-mock-grid-2-tables {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   gap: 8px;
 }
 
@@ -906,7 +906,7 @@
 }
 
 .ecom-table-view-all {
-  font-size: 7px;
+  font-size: clamp(7px, 2vw, 9px);
   color: var(--ecom-purple);
   font-weight: 700;
   cursor: pointer;
@@ -919,7 +919,7 @@
 }
 
 .ecom-mock-table th {
-  font-size: 7px;
+  font-size: clamp(7px, 2vw, 9px);
   color: var(--ecom-text-light);
   font-weight: 700;
   text-transform: uppercase;
@@ -928,7 +928,7 @@
 }
 
 .ecom-mock-table td {
-  font-size: 8px;
+  font-size: clamp(8px, 2vw, 10px);
   padding: 4px;
   border-bottom: 1px solid #f8fafc;
   color: var(--ecom-text-muted);
@@ -945,7 +945,7 @@
 
 /* Status Badges */
 .ecom-status-badge {
-  font-size: 7px;
+  font-size: clamp(7px, 2vw, 9px);
   font-weight: 800;
   padding: 1px 5px;
   border-radius: 4px;
@@ -981,7 +981,7 @@
   border-radius: 14px;
   padding: 10px 14px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
-  font-size: 11px;
+  font-size: clamp(11px, 2vw, 13px);
   font-weight: 700;
   z-index: 10;
   animation: ecomFloat 5s ease-in-out infinite;
@@ -1030,13 +1030,13 @@
 }
 
 .ecom-fc-val {
-  font-size: 12px;
+  font-size: clamp(12px, 2vw, 14px);
   font-weight: 800;
   color: var(--ecom-text-dark);
 }
 
 .ecom-fc-lbl {
-  font-size: 8px;
+  font-size: clamp(8px, 2vw, 10px);
   color: var(--ecom-text-light);
   font-weight: 600;
 }
@@ -1055,7 +1055,7 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 150px;
+  max-width: 150px; width: 100%;
   z-index: 5;
   pointer-events: none;
 }
@@ -1084,7 +1084,7 @@
 }
 
 .ecom-ticker-item {
-  font-size: 16px;
+  font-size: clamp(12px, 3vw, 16px);
   font-weight: 800;
   color: var(--ecom-text-light);
   opacity: 0.65;
@@ -1110,7 +1110,7 @@
   align-items: center;
   justify-content: center;
   font-weight: 900;
-  font-size: 11px;
+  font-size: clamp(11px, 2vw, 13px);
 }
 
 /* ─── REDESIGNED WHY IT MATTERS GRID ─── */
@@ -1164,7 +1164,7 @@
 }
 
 .laptop-screen {
-  width: 100px;
+  max-width: 100px; width: 100%;
   height: 66px;
   background: #0f172a;
   border: 4px solid #334155;
@@ -1183,11 +1183,11 @@
 }
 
 .cart-badge-large {
-  font-size: 20px;
+  font-size: clamp(16px, 3vw, 20px);
 }
 
 .buy-btn-large {
-  font-size: 8px;
+  font-size: clamp(8px, 2vw, 10px);
   font-weight: 800;
   background: #ff6b00;
   color: #ffffff;
@@ -1196,7 +1196,7 @@
 }
 
 .laptop-keyboard {
-  width: 116px;
+  max-width: 116px; width: 100%;
   height: 6px;
   background: #64748b;
   border-radius: 0 0 4px 4px;
@@ -1223,11 +1223,11 @@
 }
 
 .mobile-card-art {
-  font-size: 16px;
+  font-size: clamp(12px, 3vw, 16px);
 }
 
 .mobile-cart-art {
-  font-size: 16px;
+  font-size: clamp(12px, 3vw, 16px);
 }
 
 /* Text Highlights */
@@ -1249,14 +1249,14 @@
 /* 8-Card Grid Layout */
 .ecom-why-cards-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
   gap: 24px;
   margin-top: 40px;
 }
 
 @media (max-width: 1024px) {
   .ecom-why-cards-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   }
 }
 
@@ -1329,7 +1329,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 20px;
+  font-size: clamp(16px, 3vw, 20px);
 }
 
 .why-card-line {
@@ -1353,7 +1353,7 @@
 }
 
 .why-card-text p {
-  font-size: 13px;
+  font-size: clamp(13px, 2vw, 15px);
   color: var(--ecom-text-muted);
   line-height: 1.55;
   margin: 0;
@@ -1382,14 +1382,14 @@
 
 .ecom-why-metrics-wrapper {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
   gap: 20px 16px;
   align-items: center;
 }
 
 @media (max-width: 768px) {
   .ecom-why-metrics-wrapper {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   }
 }
 
@@ -1414,12 +1414,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 16px;
+  font-size: clamp(12px, 3vw, 16px);
   margin-bottom: 8px;
 }
 
 .metric-val {
-  font-size: 22px;
+  font-size: clamp(18px, 3vw, 22px);
   font-weight: 900;
   color: var(--ecom-text-dark);
   line-height: 1.1;
@@ -1427,7 +1427,7 @@
 }
 
 .metric-lbl {
-  font-size: 11px;
+  font-size: clamp(11px, 2vw, 13px);
   color: var(--ecom-text-light);
   font-weight: 700;
   line-height: 1.2;
@@ -1447,7 +1447,7 @@
 }
 
 .ecom-why-cta-wrapper h4 {
-  font-size: 17px;
+  font-size: clamp(13px, 3vw, 17px);
   font-weight: 850;
   color: var(--ecom-text-dark);
   margin: 0;
@@ -1467,7 +1467,7 @@
   padding: 12px 24px;
   border-radius: 8px;
   font-weight: 700;
-  font-size: 13px;
+  font-size: clamp(13px, 2vw, 15px);
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 12px rgba(255, 107, 0, 0.2);
@@ -1482,13 +1482,13 @@
 /* ─── SERVICES SECTION ─── */
 .ecom-services-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
   gap: 24px;
 }
 
 @media (max-width: 1024px) {
   .ecom-services-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   }
 }
 
@@ -1533,14 +1533,14 @@
 }
 
 .ecom-service-header h3 {
-  font-size: 18px;
+  font-size: clamp(14px, 3vw, 18px);
   font-weight: 800;
   margin: 0;
   color: var(--ecom-text-dark);
 }
 
 .ecom-service-card p {
-  font-size: 14px;
+  font-size: clamp(14px, 2vw, 16px);
   margin: 0;
   line-height: 1.6;
 }
@@ -1558,7 +1558,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 13px;
+  font-size: clamp(13px, 2vw, 15px);
   font-weight: 600;
   color: var(--ecom-text-muted);
 }
@@ -1571,7 +1571,7 @@
 /* ─── REDESIGNED GROWTH PROCESS ─── */
 .ecom-process-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
   row-gap: 40px;
   column-gap: 30px;
   position: relative;
@@ -1580,7 +1580,7 @@
 
 @media (max-width: 1024px) {
   .ecom-process-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   }
 }
 
@@ -1617,7 +1617,7 @@
     position: absolute;
     top: 50px; /* Aligned with the center of the circular icon */
     right: -25px;
-    font-size: 20px;
+    font-size: clamp(16px, 3vw, 20px);
     color: #cbd5e1;
     font-weight: 300;
     pointer-events: none;
@@ -1656,7 +1656,7 @@
 }
 
 .ecom-process-card h3 {
-  font-size: 17px;
+  font-size: clamp(13px, 3vw, 17px);
   font-weight: 850;
   color: var(--ecom-text-dark);
   margin: 0;
@@ -1693,7 +1693,7 @@
   padding: 12px 24px;
   border-radius: 50px;
   font-weight: 700;
-  font-size: 14px;
+  font-size: clamp(14px, 2vw, 16px);
   display: flex;
   align-items: center;
   gap: 10px;
@@ -1712,19 +1712,19 @@
 /* ─── CHANNELS ─── */
 .ecom-channels-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
   gap: 16px;
 }
 
 @media (max-width: 991px) {
   .ecom-channels-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
   }
 }
 
 @media (max-width: 580px) {
   .ecom-channels-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   }
 }
 
@@ -1754,7 +1754,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 16px;
+  font-size: clamp(12px, 3vw, 16px);
 }
 
 .ecom-channel-card h4 {
@@ -1766,13 +1766,13 @@
 /* ─── BENEFITS ─── */
 .ecom-benefits-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
   gap: 20px;
 }
 
 @media (max-width: 1024px) {
   .ecom-benefits-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   }
 }
 
@@ -1797,20 +1797,20 @@
 }
 
 .ecom-benefit-card h3 {
-  font-size: 16px;
+  font-size: clamp(12px, 3vw, 16px);
   font-weight: 800;
   margin: 0 0 10px;
 }
 
 .ecom-benefit-card p {
-  font-size: 13px;
+  font-size: clamp(13px, 2vw, 15px);
   margin: 0;
   line-height: 1.5;
 }
 
 .ecom-why-us-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   gap: 30px;
 }
 
@@ -1838,7 +1838,7 @@
 }
 
 .ecom-why-us-text h3 {
-  font-size: 16px;
+  font-size: clamp(12px, 3vw, 16px);
   font-weight: 800;
   margin: 0 0 6px;
 }
@@ -1860,7 +1860,7 @@
 
 .ecom-metrics-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr));
   gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
@@ -1871,14 +1871,14 @@
 
 @media (max-width: 991px) {
   .ecom-metrics-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
     gap: 30px;
   }
 }
 
 @media (max-width: 580px) {
   .ecom-metrics-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
     gap: 24px;
   }
 }
@@ -1890,13 +1890,13 @@
 }
 
 .ecom-metric-val {
-  font-size: 34px;
+  font-size: clamp(1.4rem, 3.5vw, 2.2rem);
   font-weight: 900;
   letter-spacing: -1px;
 }
 
 .ecom-metric-label {
-  font-size: 11px;
+  font-size: clamp(11px, 2vw, 13px);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -1906,7 +1906,7 @@
 /* ─── CASE STUDIES ─── */
 .ecom-cases-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   gap: 30px;
 }
 
@@ -1933,7 +1933,7 @@
 }
 
 .ecom-case-header-bar h3 {
-  font-size: 20px;
+  font-size: clamp(16px, 3vw, 20px);
   font-weight: 800;
   margin: 0 0 4px;
 }
@@ -1956,12 +1956,12 @@
 
 .ecom-case-blocks {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   gap: 16px;
 }
 
 .ecom-case-block-item h4 {
-  font-size: 12px;
+  font-size: clamp(12px, 2vw, 14px);
   font-weight: 800;
   text-transform: uppercase;
   color: var(--ecom-text-light);
@@ -1977,7 +1977,7 @@
 
 .ecom-case-metrics-row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
   gap: 12px;
   background: #faf5ff;
   border: 1px solid rgba(124, 58, 237, 0.08);
@@ -1993,13 +1993,13 @@
 }
 
 .ecom-case-metric-val {
-  font-size: 18px;
+  font-size: clamp(14px, 3vw, 18px);
   font-weight: 900;
   color: var(--ecom-purple);
 }
 
 .ecom-case-metric-lbl {
-  font-size: 9px;
+  font-size: clamp(9px, 2vw, 11px);
   font-weight: 700;
   color: var(--ecom-text-light);
   text-transform: uppercase;
@@ -2029,13 +2029,13 @@
 }
 
 .ecom-testimonial-rating {
-  font-size: 20px;
+  font-size: clamp(16px, 3vw, 20px);
   color: #fbbf24;
   margin-bottom: 20px;
 }
 
 .ecom-testimonial-text {
-  font-size: 18px;
+  font-size: clamp(14px, 3vw, 18px);
   font-style: italic;
   font-weight: 500;
   line-height: 1.6;
@@ -2045,7 +2045,7 @@
 
 @media (max-width: 580px) {
   .ecom-testimonial-text {
-    font-size: 15px;
+    font-size: clamp(11px, 3vw, 15px);
   }
 }
 
@@ -2075,12 +2075,12 @@
   align-items: center;
   justify-content: center;
   font-weight: 800;
-  font-size: 16px;
+  font-size: clamp(12px, 3vw, 16px);
 }
 
 .ecom-testimonial-author-info h4 {
   margin: 0;
-  font-size: 14px;
+  font-size: clamp(14px, 2vw, 16px);
   font-weight: 800;
 }
 
@@ -2165,7 +2165,7 @@
   align-items: center;
   cursor: pointer;
   font-weight: 700;
-  font-size: 15px;
+  font-size: clamp(11px, 3vw, 15px);
   color: var(--ecom-text-dark);
   gap: 16px;
   transition: color 0.3s ease;
@@ -2203,7 +2203,7 @@
 
 .ecom-faq-answer-inner {
   padding: 0 24px 20px;
-  font-size: 14px;
+  font-size: clamp(14px, 2vw, 16px);
   color: var(--ecom-text-muted);
   line-height: 1.6;
   border-top: 1px solid rgba(0, 0, 0, 0.03);
@@ -2229,7 +2229,7 @@
 }
 
 .ecom-final-cta h2 {
-  font-size: 44px;
+  font-size: clamp(32px, 5vw, 44px);
   font-weight: 900;
   color: #ffffff;
   margin-bottom: 20px;
@@ -2237,13 +2237,13 @@
 
 @media (max-width: 768px) {
   .ecom-final-cta h2 {
-    font-size: 32px;
+    font-size: clamp(1.3rem, 3.2vw, 2rem);
   }
 }
 
 .ecom-final-cta p {
   color: #cbd5e1;
-  font-size: 16px;
+  font-size: clamp(12px, 3vw, 16px);
   margin-bottom: 35px;
 }
 
@@ -2256,7 +2256,7 @@
 
 /* ─── LOCAL SEO SECTION ─── */
 .ecom-local-section {
-  padding: 60px 40px;
+  padding: clamp(2rem, 4vw, 4rem) clamp(1rem, 4vw, 3rem);
   background: #f8fafc;
   border-top: 1px solid var(--ecom-border);
 }
@@ -2280,7 +2280,7 @@
 }
 
 .ecom-local-info h3 {
-  font-size: 20px;
+  font-size: clamp(16px, 3vw, 20px);
   font-weight: 800;
   margin: 0;
 }
@@ -2326,7 +2326,7 @@
 }
 
 .ecom-map-container {
-  height: 320px;
+  min-height: 320px; height: auto;
   border-radius: 16px;
   overflow: hidden;
   border: 1px solid var(--ecom-border);

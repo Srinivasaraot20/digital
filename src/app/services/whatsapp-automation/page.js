@@ -336,62 +336,7 @@ export default function WhatsAppAutomationPage() {
                 </button>
               </div>
 
-              {/* 4 Trust stats */}
-              <div className="wa-hero-trust">
-                <div className="wa-trust-item">
-                  <div className="wa-trust-icon-box purple">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                      <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                      <line x1="8" y1="21" x2="16" y2="21"></line>
-                      <line x1="12" y1="17" x2="12" y2="21"></line>
-                    </svg>
-                  </div>
-                  <div className="wa-trust-info">
-                    <span className="wa-trust-num"><AnimatedCounter value="500+" /></span>
-                    <span className="wa-trust-label">Projects Delivered</span>
-                  </div>
-                </div>
-                <div className="wa-trust-item">
-                  <div className="wa-trust-icon-box green">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                      <circle cx="9" cy="7" r="4"></circle>
-                      <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                      <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                    </svg>
-                  </div>
-                  <div className="wa-trust-info">
-                    <span className="wa-trust-num"><AnimatedCounter value="150+" /></span>
-                    <span className="wa-trust-label">Happy Clients</span>
-                  </div>
-                </div>
-                <div className="wa-trust-item">
-                  <div className="wa-trust-icon-box blue">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                    </svg>
-                  </div>
-                  <div className="wa-trust-info">
-                    <span className="wa-trust-num"><AnimatedCounter value="97%" /></span>
-                    <span className="wa-trust-label">Client Retention</span>
-                  </div>
-                </div>
-                <div className="wa-trust-item">
-                  <div className="wa-trust-icon-box orange">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                      <line x1="18" y1="20" x2="18" y2="10"></line>
-                      <line x1="12" y1="20" x2="12" y2="4"></line>
-                      <line x1="6" y1="20" x2="6" y2="14"></line>
-                      <path d="M3 18l6-6 4 4 8-8"></path>
-                      <polyline points="17 8 21 8 21 12"></polyline>
-                    </svg>
-                  </div>
-                  <div className="wa-trust-info">
-                    <span className="wa-trust-num"><AnimatedCounter value="10X" /></span>
-                    <span className="wa-trust-label">Business Growth</span>
-                  </div>
-                </div>
-              </div>
+
             </div>
 
             {/* Right Side Visual Phone Mockup & widgets */}

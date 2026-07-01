@@ -210,21 +210,7 @@ export default function ECommerceMarketingClient() {
                   </button>
                 </div>
 
-                <div className="ecom-hero-trust">
-                  <div className="ecom-trust-item">
-                    <span>✓</span> 500+ Campaigns Managed
-                  </div>
 
-                  <div className="ecom-trust-item">
-                    <span>✓</span> 150+ Happy Clients
-                  </div>
-                  <div className="ecom-trust-item">
-                    <span>✓</span> 97% Client Retention
-                  </div>
-                  <div className="ecom-trust-item">
-                    <span>✓</span> Google Ads Certified Experts
-                  </div>
-                </div>
               </div>
 
               {/* Right — Interactive CSS Dashboard Visual */}
@@ -774,66 +760,6 @@ export default function ECommerceMarketingClient() {
 
             </div>
 
-            {/* Bottom Row: Metrics Grid + CTA Panel */}
-            <div className="ecom-why-bottom-panel">
-              
-              {/* Metrics Row (Left) */}
-              <div className="ecom-why-metrics-wrapper">
-                
-                <div className="why-metric-item">
-                  <div className="metric-icon" style={{ background: "rgba(16, 185, 129, 0.08)", color: "#10b981" }}>🚀</div>
-                  <span className="metric-val">500+</span>
-                  <span className="metric-lbl">Campaigns Managed</span>
-                </div>
-
-                <div className="why-metric-item">
-                  <div className="metric-icon" style={{ background: "rgba(37, 99, 235, 0.08)", color: "#2563eb" }}>👥</div>
-                  <span className="metric-val">150+</span>
-                  <span className="metric-lbl">Happy Clients</span>
-                </div>
-
-                <div className="why-metric-item">
-                  <div className="metric-icon" style={{ background: "rgba(124, 58, 237, 0.08)", color: "#7c3aed" }}>🛡️</div>
-                  <span className="metric-val">97%</span>
-                  <span className="metric-lbl">Client Retention</span>
-                </div>
-
-                <div className="why-metric-item">
-                  <div className="metric-icon" style={{ background: "rgba(255, 107, 0, 0.08)", color: "var(--ecom-orange)" }}>📈</div>
-                  <span className="metric-val">5X</span>
-                  <span className="metric-lbl">Average ROAS</span>
-                </div>
-
-                <div className="why-metric-item">
-                  <div className="metric-icon" style={{ background: "rgba(13, 148, 136, 0.08)", color: "#0d9488" }}>🎯</div>
-                  <span className="metric-val">40%</span>
-                  <span className="metric-lbl">Higher Conversion</span>
-                </div>
-
-                <div className="why-metric-item">
-                  <div className="metric-icon" style={{ background: "rgba(225, 29, 72, 0.08)", color: "#e11d48" }}>🛒</div>
-                  <span className="metric-val">35%</span>
-                  <span className="metric-lbl">Lower Abandonment</span>
-                </div>
-
-                <div className="why-metric-item">
-                  <div className="metric-icon" style={{ background: "rgba(14, 165, 233, 0.08)", color: "#0ea5e9" }}>⚡</div>
-                  <span className="metric-val">300%</span>
-                  <span className="metric-lbl">Traffic Growth</span>
-                </div>
-
-              </div>
-
-              {/* Ready to Grow CTA (Right) */}
-              <div className="ecom-why-cta-wrapper">
-                <h4>Ready to Grow Your Online Store?</h4>
-                <p>Let's create a powerful marketing strategy that brings more traffic, more sales, and more revenue.</p>
-                <button onClick={triggerModal} className="btn-primary">
-                  📅 Book Free Consultation
-                </button>
-              </div>
-
-            </div>
 
           </div>
         </section>

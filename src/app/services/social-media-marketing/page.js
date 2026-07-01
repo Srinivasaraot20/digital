@@ -514,48 +514,7 @@ export default function SocialMediaMarketingPage() {
             </div>
           </div>
 
-          {/* Stats bar */}
-          <div className="smm-hero-stats-bar">
-            <div className="smm-hero-stat">
-              <span className="smm-hero-stat-icon" style={{ background: "rgba(124,58,237,0.1)", color: "#7c3aed" }}>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-              </span>
-              <div>
-                <div className="smm-hero-stat-num">2.8M+</div>
-                <div className="smm-hero-stat-lbl">People Reached</div>
-              </div>
-            </div>
-            <div className="smm-hero-stat-divider"></div>
-            <div className="smm-hero-stat">
-              <span className="smm-hero-stat-icon" style={{ background: "rgba(236,72,153,0.1)", color: "#ec4899" }}>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ec4899" stroke="#ec4899" strokeWidth="1"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-              </span>
-              <div>
-                <div className="smm-hero-stat-num">148K+</div>
-                <div className="smm-hero-stat-lbl">Engagements</div>
-              </div>
-            </div>
-            <div className="smm-hero-stat-divider"></div>
-            <div className="smm-hero-stat">
-              <span className="smm-hero-stat-icon" style={{ background: "rgba(255,107,0,0.1)", color: "#ff6b00" }}>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polygon points="22 3 2 9 11 13 15 22 22 3"/></svg>
-              </span>
-              <div>
-                <div className="smm-hero-stat-num">18K+</div>
-                <div className="smm-hero-stat-lbl">Leads Generated</div>
-              </div>
-            </div>
-            <div className="smm-hero-stat-divider"></div>
-            <div className="smm-hero-stat">
-              <span className="smm-hero-stat-icon" style={{ background: "rgba(16,185,129,0.1)", color: "#10b981" }}>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
-              </span>
-              <div>
-                <div className="smm-hero-stat-num">240%</div>
-                <div className="smm-hero-stat-lbl">Average Growth</div>
-              </div>
-            </div>
-          </div>
+
         </div>
 
         {/* RIGHT: premium visual */}
@@ -1270,31 +1229,7 @@ export default function SocialMediaMarketingPage() {
         </div>
       </section>
 
-      {/* 11. PERFORMANCE METRICS */}
-      <section className="smm-metrics-section">
-        <div className="smm-metrics-grid reveal-element">
-          <div className="smm-metric-item">
-            <h3><MetricCounter value="200+" /></h3>
-            <p>Brands Managed</p>
-          </div>
-          <div className="smm-metric-item">
-            <h3><MetricCounter value="15M+" /></h3>
-            <p>Monthly Reach</p>
-          </div>
-          <div className="smm-metric-item">
-            <h3><MetricCounter value="120M+" /></h3>
-            <p>Impressions</p>
-          </div>
-          <div className="smm-metric-item">
-            <h3><MetricCounter value="95%" /></h3>
-            <p>Client Retention</p>
-          </div>
-          <div className="smm-metric-item">
-            <h3><MetricCounter value="500+" /></h3>
-            <p>Campaigns</p>
-          </div>
-        </div>
-      </section>
+
 
       {/* 12. CASE STUDIES (BEFORE/AFTER TOGGLE) */}
       <section className="smm-section smm-toggle-section">

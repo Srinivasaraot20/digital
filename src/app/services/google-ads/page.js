@@ -1235,66 +1235,7 @@ export default function GoogleAdsPage() {
             </div>
           </div>
 
-          {/* Stat Bar (Ribbon Card) */}
-          <div className="ga-ribbon-stats-bar">
-            <div className="ga-ribbon-stat-item">
-              <div className="ga-ribbon-stat-icon-dot" style={{ background: "rgba(255,107,0,0.1)" }}>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ff6b00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M4.5 16.5c-1.5 1.26-2 2.5-2 3.5 1-.5 2.5-1 3.5-2.5" />
-                  <path d="M12 2C6.5 2 2 6.5 2 12c0 2.5 1 4.5 2.5 6l11.5-11.5c-1.5-1.5-3.5-2.5-6-2.5z" />
-                  <path d="M22 2s-3.5 1-6 2.5L20 10.5C21.5 8 22 2 22 2z" />
-                  <path d="M9 15l-3 3" />
-                  <path d="M15 9l3-3" />
-                </svg>
-              </div>
-              <div className="ga-ribbon-stat-info">
-                <span className="ga-ribbon-stat-val">500+</span>
-                <span className="ga-ribbon-stat-lbl">Campaigns Managed</span>
-              </div>
-            </div>
 
-            <div className="ga-ribbon-stat-item">
-              <div className="ga-ribbon-stat-icon-dot" style={{ background: "rgba(66,133,244,0.1)" }}>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4285F4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="2" y="4" width="20" height="16" rx="2" ry="2" />
-                  <line x1="12" y1="4" x2="12" y2="20" />
-                  <line x1="2" y1="12" x2="22" y2="12" />
-                </svg>
-              </div>
-              <div className="ga-ribbon-stat-info">
-                <span className="ga-ribbon-stat-val">₹25Cr+</span>
-                <span className="ga-ribbon-stat-lbl">Ad Spend Managed</span>
-              </div>
-            </div>
-
-            <div className="ga-ribbon-stat-item">
-              <div className="ga-ribbon-stat-icon-dot" style={{ background: "rgba(52,168,83,0.1)" }}>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#34A853" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
-                  <polyline points="17 6 23 6 23 12" />
-                </svg>
-              </div>
-              <div className="ga-ribbon-stat-info">
-                <span className="ga-ribbon-stat-val">4.8x</span>
-                <span className="ga-ribbon-stat-lbl">Average ROAS</span>
-              </div>
-            </div>
-
-            <div className="ga-ribbon-stat-item">
-              <div className="ga-ribbon-stat-icon-dot" style={{ background: "rgba(66,133,244,0.1)" }}>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4285F4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                  <circle cx="9" cy="7" r="4" />
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                </svg>
-              </div>
-              <div className="ga-ribbon-stat-info">
-                <span className="ga-ribbon-stat-val">97%</span>
-                <span className="ga-ribbon-stat-lbl">Client Retention</span>
-              </div>
-            </div>
-          </div>
 
           {/* Features attributes row */}
           <div className="ga-features-attributes-row">
@@ -1362,28 +1303,7 @@ export default function GoogleAdsPage() {
             </div>
           </div>
 
-          {/* Brand logos row */}
-          <div className="ga-trusted-brands-section">
-            <span className="ga-trusted-title">Trusted by 500+ businesses worldwide</span>
-            <div className="ga-brands-logos-grid">
-              <span className="ga-brand-logo-text adani">adani</span>
-              <span className="ga-brand-logo-text tata">
-                <span className="tata-icon">T</span> TATA
-              </span>
-              <span className="ga-brand-logo-text decathlon">DECATHLON</span>
-              <span className="ga-brand-logo-text flipkart">
-                flipkart<span className="fk-star">✦</span>
-              </span>
-              <span className="ga-brand-logo-text makemytrip">
-                make<span className="mytrip-blue">my</span><span className="mytrip-orange">trip</span>
-              </span>
-              <span className="ga-brand-logo-text zomato">zomato</span>
-              <span className="ga-brand-logo-text policybazaar">
-                policybazaar<span className="pb-dot">.com</span>
-              </span>
-              <span className="ga-brand-logo-text oyo">OYO</span>
-            </div>
-          </div>
+
         </div>
       </section>
 
@@ -1649,66 +1569,7 @@ export default function GoogleAdsPage() {
                 </div>
               </div>
 
-              {/* Bottom statistics ribbon inside Why Google Ads block */}
-              <div className="ga-why-stats-ribbon">
-                <div className="ga-why-stat-ribbon-item">
-                  <div className="ga-why-stat-ribbon-icon-wrap" style={{ background: "rgba(124,58,237,0.1)", color: "#7c3aed" }}>
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z" />
-                      <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
-                      <line x1="12" y1="19" x2="12" y2="22" />
-                    </svg>
-                  </div>
-                  <div className="ga-why-stat-ribbon-info">
-                    <span className="ga-why-stat-ribbon-val">8.5B+</span>
-                    <span className="ga-why-stat-ribbon-lbl">Searches Daily</span>
-                  </div>
-                </div>
 
-                <div className="ga-why-stat-ribbon-item">
-                  <div className="ga-why-stat-ribbon-icon-wrap" style={{ background: "rgba(52,168,83,0.1)", color: "#34A853" }}>
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                      <circle cx="12" cy="12" r="10" />
-                      <line x1="2" y1="12" x2="22" y2="12" />
-                      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-                    </svg>
-                  </div>
-                  <div className="ga-why-stat-ribbon-info">
-                    <span className="ga-why-stat-ribbon-val">3M+</span>
-                    <span className="ga-why-stat-ribbon-lbl">Websites in Network</span>
-                  </div>
-                </div>
-
-                <div className="ga-why-stat-ribbon-item">
-                  <div className="ga-why-stat-ribbon-icon-wrap" style={{ background: "rgba(255,107,0,0.1)", color: "#ff6b00" }}>
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                      <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
-                      <line x1="2" y1="20" x2="22" y2="20" />
-                      <line x1="12" y1="17" x2="12" y2="20" />
-                    </svg>
-                  </div>
-                  <div className="ga-why-stat-ribbon-info">
-                    <span className="ga-why-stat-ribbon-val">2.6M+</span>
-                    <span className="ga-why-stat-ribbon-lbl">Businesses Advertise</span>
-                  </div>
-                </div>
-
-                <div className="ga-why-stat-ribbon-item">
-                  <div className="ga-why-stat-ribbon-icon-wrap" style={{ background: "rgba(236,72,153,0.1)", color: "#ec4899" }}>
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
-                      <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
-                      <path d="M4 22h16" />
-                      <path d="M10 14.66V17c0 .55-.45 1-1 1H4v2h16v-2h-5c-.55 0-1-.45-1-1v-2.34" />
-                      <path d="M12 2a4 4 0 0 0-4 4v5a4 4 0 0 0 8 0V6a4 4 0 0 0-4-4z" />
-                    </svg>
-                  </div>
-                  <div className="ga-why-stat-ribbon-info">
-                    <span className="ga-why-stat-ribbon-val">10X</span>
-                    <span className="ga-why-stat-ribbon-lbl">Better ROI Potential</span>
-                  </div>
-                </div>
-              </div>
 
             </div>
 
@@ -2034,30 +1895,6 @@ export default function GoogleAdsPage() {
         </div>
       </section>
 
-      {/* ── 9. RESULTS ── */}
-      <section className="ga-section ga-section-white">
-        <div className="ga-wrap">
-          <div className="ga-title-center">
-            <div className="ga-eyebrow">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18" /><polyline points="17 6 23 6 23 12" /></svg>
-              Results
-            </div>
-            <h2>Numbers That Speak for Themselves</h2>
-            <p>Aggregate performance across all active TenX Google Ads client accounts — real results, real clients.</p>
-          </div>
-          <div className="ga-results-grid">
-            {results.map(r => (
-              <div key={r.label} className="ga-result-card">
-                <div className="ga-result-num">
-                  <AnimatedCounter value={r.num} suffix={r.suffix} />
-                </div>
-                <div className="ga-result-label">{r.label}</div>
-                <div className="ga-result-sub">{r.sub}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* ── 10. INDUSTRIES ── */}
       <section className="ga-section ga-section-light">
@@ -2107,51 +1944,6 @@ export default function GoogleAdsPage() {
         </div>
       </section>
 
-      {/* ── 12. CASE STUDIES ── */}
-      <section className="ga-section ga-section-light">
-        <div className="ga-wrap">
-          <div className="ga-title-center">
-            <div className="ga-eyebrow">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" /><polyline points="14 2 14 8 20 8" /></svg>
-              Case Studies
-            </div>
-            <h2>Real Campaigns. Real Revenue.</h2>
-            <p>Explore how we've transformed Google Ads performance for businesses across industries with measurable, auditable results.</p>
-          </div>
-          <div className="ga-cases-grid">
-            {caseStudies.map(cs => (
-              <div key={cs.title} className="ga-case-card">
-                <div className="ga-case-header">
-                  <div className="ga-case-tag">{cs.tag}</div>
-                  <div style={{ display: "flex", gap: "2px" }}>
-                    {[...Array(5)].map((_, i) => <IconStar key={i} size={10} />)}
-                  </div>
-                </div>
-                <h3>{cs.title}</h3>
-                <div className="ga-case-desc">{cs.desc}</div>
-                <div className="ga-case-challenge-sol">
-                  <div className="ga-case-block">
-                    <div className="ga-case-block-label">Challenge</div>
-                    <p>{cs.challenge}</p>
-                  </div>
-                  <div className="ga-case-block">
-                    <div className="ga-case-block-label">Strategy</div>
-                    <p>{cs.strategy}</p>
-                  </div>
-                </div>
-                <div className="ga-case-metrics">
-                  {cs.metrics.map(m => (
-                    <div key={m.lbl} className="ga-case-metric">
-                      <div className="ga-case-metric-val">{m.val}</div>
-                      <div className="ga-case-metric-lbl">{m.lbl}</div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* ── 13. FAQ ── */}
       <section className="ga-section ga-section-white">
