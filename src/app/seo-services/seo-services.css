@@ -35,7 +35,7 @@
 }
 
 .seo-section {
-  padding: 80px 0;
+  padding: clamp(2rem, 5vw, 5rem) 0;
   position: relative;
 }
 
@@ -221,7 +221,7 @@
 
 .seo-hero-grid {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   gap: 56px;
   align-items: center;
 }
@@ -324,14 +324,14 @@
 /* Trust Badges Row */
 .seo-hero-badges-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   gap: 16px 24px;
 }
 
 /* AEO / GEO Advanced Sections */
 .seo-advanced-ai-sections {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   gap: 28px;
 }
 
@@ -548,7 +548,7 @@
 /* Summary Grid */
 .seo-dash-summary-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
   gap: 10px;
 }
 
@@ -953,7 +953,7 @@
 /* Bottom Stats Banner */
 .seo-hero-stats-banner {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr));
   background: #ffffff;
   border: 1px solid #f1f5f9;
   border-radius: 20px;
@@ -1010,7 +1010,7 @@
 /* ── WHY SEO MATTERS SECTION ── */
 .seo-why-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
   gap: 24px;
 }
 
@@ -1057,7 +1057,7 @@
 /* ── OUR SERVICES GRID ── */
 .seo-services-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
   gap: 20px;
 }
 
@@ -1140,7 +1140,7 @@
 
 .seo-roadmap-grid {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(140px, 100%), 1fr));
   gap: 16px;
   position: relative;
   z-index: 2;
@@ -1200,7 +1200,7 @@
 /* ── AUDIT DASHBOARD DEMO ── */
 .seo-audit-grid {
   display: grid;
-  grid-template-columns: 1fr 1.3fr;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
   gap: 40px;
   align-items: start;
 }
@@ -1250,7 +1250,7 @@
 }
 
 .seo-dial-num {
-  font-size: 32px;
+  font-size: clamp(1.3rem, 3.2vw, 2rem);
   font-weight: 900;
   color: var(--seo-dark);
 }
@@ -1264,7 +1264,7 @@
 
 .seo-health-metrics {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   gap: 16px;
 }
 
@@ -1349,7 +1349,7 @@
 /* ── TOOLS GRID ── */
 .seo-tools-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr));
   gap: 16px;
 }
 
@@ -1375,7 +1375,7 @@
 }
 
 .seo-tool-logo {
-  font-size: 24px;
+  font-size: clamp(1.1rem, 2.4vw, 1.5rem);
   width: 48px;
   height: 48px;
   border-radius: 50%;
@@ -1394,7 +1394,7 @@
 /* ── ROI CALCULATOR ── */
 .seo-calc-grid {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   gap: 40px;
   background-color: var(--seo-white);
   border: 1px solid var(--seo-border);
@@ -1519,7 +1519,7 @@
 /* ── INDUSTRIES SERVED ── */
 .seo-industries-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
   gap: 20px;
 }
 
@@ -1540,7 +1540,7 @@
 }
 
 .seo-ind-icon {
-  font-size: 24px;
+  font-size: clamp(1.1rem, 2.4vw, 1.5rem);
   width: 48px;
   height: 48px;
   background-color: var(--seo-light-bg);
@@ -1560,7 +1560,7 @@
 /* ── CASE STUDIES ── */
 .seo-cases-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
   gap: 24px;
 }
 
@@ -1635,7 +1635,7 @@
 
 .seo-case-metrics {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   gap: 12px;
   border-top: 1px solid var(--seo-border);
   padding-top: 16px;
@@ -1667,7 +1667,7 @@
 
 .seo-ba-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   gap: 32px;
 }
 
@@ -1793,14 +1793,14 @@
 
 /* ── LEAD GEN SECTION ── */
 .seo-lead-section {
-  padding: 90px 0;
+  padding: clamp(2.5rem, 6.5vw, 6rem) 0;
   background-color: var(--seo-light-bg);
   position: relative;
 }
 
 .seo-lead-grid {
   display: grid;
-  grid-template-columns: 0.95fr 1.05fr;
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   gap: 48px;
   align-items: center;
 }
@@ -1867,7 +1867,7 @@
 
 .seo-form-row {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   gap: 16px;
 }
 
@@ -1983,7 +1983,7 @@
 /* ── RESPONSIVE RESPONSIVENESS ── */
 @media (max-width: 1024px) {
   .seo-section {
-    padding: 60px 0;
+    padding: clamp(1.5rem, 4vw, 4rem) 0;
   }
   .seo-hero-grid {
     grid-template-columns: 1fr;
@@ -1997,7 +1997,7 @@
     transform: none !important;
   }
   .seo-hero-stats-banner {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
     gap: 20px 16px;
   }
   .seo-hero-stat-box {
@@ -2015,13 +2015,13 @@
     display: none;
   }
   .seo-why-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   }
   .seo-services-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   }
   .seo-roadmap-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
   }
   .seo-roadmap-line {
     display: none;
@@ -2030,17 +2030,17 @@
     grid-template-columns: 1fr;
   }
   .seo-tools-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
   }
   .seo-calc-grid {
     grid-template-columns: 1fr;
     padding: 24px;
   }
   .seo-industries-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
   }
   .seo-cases-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   }
   .seo-lead-grid {
     grid-template-columns: 1fr;
@@ -2055,7 +2055,7 @@
     padding-top: 24px;
   }
   .seo-hero-stats-banner {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
     gap: 16px;
   }
   .seo-hero-stat-box {
@@ -2076,7 +2076,7 @@
     right: -12px;
   }
   .seo-dash-summary-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   }
   .seo-dash-analytics-grid {
     grid-template-columns: 1fr;
@@ -2095,13 +2095,13 @@
     grid-template-columns: 1fr;
   }
   .seo-roadmap-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   }
   .seo-tools-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
   }
   .seo-industries-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   }
   .seo-cases-grid {
     grid-template-columns: 1fr;
@@ -2129,7 +2129,7 @@
     padding-bottom: 0 !important;
   }
   .seo-tools-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   }
   .seo-industries-grid {
     grid-template-columns: 1fr;

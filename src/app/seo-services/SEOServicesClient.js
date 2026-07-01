@@ -1001,15 +1001,9 @@ Please contact me for the audit. Thank you!`;
                 <span className="gradient-text">Grow Your Business.</span>
               </h1>
               <p>
-                Our data-driven SEO strategies help businesses increase search visibility, attract qualified organic traffic, improve rankings, and generate long-term revenue through sustainable search engine optimization.
+                Our data-driven SEO strategies help businesses improve search rankings, increase organic traffic, and generate sustainable long-term growth. As a leading digital marketing agency in Hyderabad and a trusted SEO company across Andhra Pradesh and Telangana, we provide Local SEO, Web Design, Google Ads (PPC), Social Media Marketing, and Lead Generation services that deliver measurable business results.
               </p>
-              <p>
-                We are a top digital marketing agency in Hyderabad, the best SEO company in Andhra Pradesh, and a trusted local marketing partner for businesses in Visakhapatnam, Vijayawada, Guntur, Nandyal, Kurnool, and all major Telangana and AP cities.
-              </p>
-              <p>
-                From affordable local SEO services in Hyderabad and Visakhapatnam to web design, PPC management in Guntur, social media marketing in Madhapur, and lead generation across Telangana, our team delivers measurable growth.
-              </p>
-              
+
               <div className="seo-hero-ctas">
                 <button className="seo-btn seo-btn-primary" onClick={scrollToForm}>
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: "4px" }}>
@@ -1345,22 +1339,6 @@ Please contact me for the audit. Thank you!`;
             </div>
           </div>
 
-          {/* ── Bottom Stats Banner ── */}
-          <div className="seo-hero-stats-banner reveal-element delay-300">
-            {heroStats.map((stat, idx) => (
-              <div key={idx} className="seo-hero-stat-box">
-                <div className="seo-hero-stat-icon-wrap">
-                  {stat.icon}
-                </div>
-                <div className="seo-hero-stat-info">
-                  <span className="seo-hero-stat-val">
-                    <MetricCounter value={stat.value} />
-                  </span>
-                  <span className="seo-hero-stat-lbl">{stat.label}</span>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
