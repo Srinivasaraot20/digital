@@ -61,7 +61,7 @@
 }
 
 .seo-service-area-card h3 {
-  font-size: 18px;
+  font-size: clamp(14px, 3vw, 18px);
   font-weight: 800;
   margin-bottom: 12px;
   color: var(--seo-dark);
@@ -87,7 +87,7 @@
   padding: 14px 16px;
   background-color: #f8fafc;
   border-radius: 16px;
-  font-size: 14px;
+  font-size: clamp(14px, 2vw, 16px);
   color: var(--seo-dark);
   border: 1px solid rgba(15, 23, 42, 0.06);
 }
@@ -120,7 +120,7 @@
 }
 
 .seo-coverage-card h3 {
-  font-size: 17px;
+  font-size: clamp(13px, 3vw, 17px);
   font-weight: 800;
   margin-bottom: 12px;
   color: var(--seo-dark);
@@ -167,7 +167,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-size: 11px;
+  font-size: clamp(11px, 2vw, 13px);
   font-weight: 800;
   text-transform: uppercase;
   color: var(--seo-primary);
@@ -188,7 +188,7 @@
 }
 
 .seo-sec-header p {
-  font-size: 16px;
+  font-size: clamp(12px, 3vw, 16px);
   line-height: 1.6;
   color: var(--seo-muted);
 }
@@ -238,7 +238,7 @@
   border: 1px solid rgba(255, 107, 0, 0.15);
   padding: 8px 16px;
   border-radius: 100px;
-  font-size: 13px;
+  font-size: clamp(13px, 2vw, 15px);
   font-weight: 700;
   color: var(--seo-muted);
   margin-bottom: 24px;
@@ -288,7 +288,7 @@
   gap: 10px;
   padding: 15px 30px;
   border-radius: 12px;
-  font-size: 15px;
+  font-size: clamp(11px, 3vw, 15px);
   font-weight: 700;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   cursor: pointer;
@@ -322,9 +322,7 @@
 }
 
 /* Trust Badges Row */
-.seo-hero-badges-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+.seo-hero-badges-container { display: grid; grid-template-columns: repeat(2, 1fr);
   gap: 16px 24px;
 }
 
@@ -344,7 +342,7 @@
 }
 
 .seo-ai-section h3 {
-  font-size: 18px;
+  font-size: clamp(14px, 3vw, 18px);
   font-weight: 800;
   margin-bottom: 8px;
   color: var(--seo-dark);
@@ -397,13 +395,13 @@
 }
 
 .seo-trust-badge-text strong {
-  font-size: 13px;
+  font-size: clamp(13px, 2vw, 15px);
   font-weight: 700;
   color: var(--seo-dark);
 }
 
 .seo-trust-badge-text span {
-  font-size: 11px;
+  font-size: clamp(11px, 2vw, 13px);
   color: #64748b;
   font-weight: 500;
 }
@@ -412,6 +410,8 @@
 .seo-hero-visual-container {
   position: relative;
   perspective: 1200px;
+  transform: scale(0.70);
+  transform-origin: center right;
 }
 
 .seo-dashboard-mockup {
@@ -458,7 +458,7 @@
 .seo-dot.green { background-color: #27c93f; }
 
 .seo-dashboard-title {
-  font-size: 11px;
+  font-size: clamp(11px, 2vw, 13px);
   font-weight: 700;
   color: #475569;
   background-color: #f8fafc;
@@ -490,7 +490,7 @@
 }
 
 .seo-live-text {
-  font-size: 9px;
+  font-size: clamp(9px, 2vw, 11px);
   font-weight: 800;
   color: #10b981;
   letter-spacing: 0.5px;
@@ -562,7 +562,7 @@
 }
 
 .seo-summary-label {
-  font-size: 9px;
+  font-size: clamp(9px, 2vw, 11px);
   font-weight: 800;
   color: #94a3b8;
   text-transform: uppercase;
@@ -578,13 +578,13 @@
 }
 
 .seo-summary-val {
-  font-size: 15px;
+  font-size: clamp(11px, 3vw, 15px);
   font-weight: 900;
   color: #0f172a;
 }
 
 .seo-summary-change {
-  font-size: 9px;
+  font-size: clamp(9px, 2vw, 11px);
   font-weight: 700;
   padding: 2px 4px;
   border-radius: 4px;
@@ -647,7 +647,7 @@
 }
 
 .seo-analytics-title {
-  font-size: 9px;
+  font-size: clamp(9px, 2vw, 11px);
   font-weight: 800;
   color: #94a3b8;
   text-transform: uppercase;
@@ -661,13 +661,13 @@
 }
 
 .seo-analytics-val {
-  font-size: 14px;
+  font-size: clamp(14px, 2vw, 16px);
   font-weight: 900;
   color: #0f172a;
 }
 
 .seo-analytics-pct {
-  font-size: 9px;
+  font-size: clamp(9px, 2vw, 11px);
   font-weight: 700;
   color: #10b981;
 }
@@ -685,7 +685,7 @@
 }
 
 .seo-chart-labels span {
-  font-size: 9px;
+  font-size: clamp(9px, 2vw, 11px);
   font-weight: 700;
   color: #94a3b8;
 }
@@ -718,7 +718,7 @@
 }
 
 .seo-kw-badge {
-  font-size: 9px;
+  font-size: clamp(9px, 2vw, 11px);
   font-weight: 800;
   padding: 1px 6px;
   border-radius: 100px;
@@ -769,7 +769,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 16px;
+  font-size: clamp(12px, 3vw, 16px);
 }
 
 .seo-trophy-text {
@@ -779,14 +779,14 @@
 }
 
 .seo-card-eyebrow {
-  font-size: 8px;
+  font-size: clamp(8px, 2vw, 10px);
   font-weight: 800;
   color: #94a3b8;
   letter-spacing: 0.5px;
 }
 
 .seo-card-title {
-  font-size: 12px;
+  font-size: clamp(12px, 2vw, 14px);
   font-weight: 800;
   color: #0f172a;
 }
@@ -826,20 +826,20 @@
 }
 
 .seo-badge-v2-label {
-  font-size: 8px;
+  font-size: clamp(8px, 2vw, 10px);
   font-weight: 800;
   color: #94a3b8;
   letter-spacing: 0.5px;
 }
 
 .seo-badge-v2-value {
-  font-size: 13px;
+  font-size: clamp(13px, 2vw, 15px);
   font-weight: 800;
   color: #0f172a;
 }
 
 .seo-badge-v2-sub {
-  font-size: 9px;
+  font-size: clamp(9px, 2vw, 11px);
   font-weight: 700;
 }
 
@@ -883,7 +883,7 @@
 
 .gold-star {
   color: #f59e0b;
-  font-size: 11px;
+  font-size: clamp(11px, 2vw, 13px);
 }
 
 /* Traffic Value badge */
@@ -995,13 +995,13 @@
 }
 
 .seo-hero-stat-val {
-  font-size: 22px;
+  font-size: clamp(18px, 3vw, 22px);
   font-weight: 900;
   color: #0f172a;
 }
 
 .seo-hero-stat-lbl {
-  font-size: 11px;
+  font-size: clamp(11px, 2vw, 13px);
   font-weight: 600;
   color: #64748b;
   white-space: nowrap;
@@ -1042,14 +1042,14 @@
 }
 
 .seo-why-card h3 {
-  font-size: 18px;
+  font-size: clamp(14px, 3vw, 18px);
   font-weight: 700;
   color: var(--seo-dark);
   margin-bottom: 12px;
 }
 
 .seo-why-card p {
-  font-size: 14px;
+  font-size: clamp(14px, 2vw, 16px);
   line-height: 1.6;
   color: var(--seo-muted);
 }
@@ -1085,13 +1085,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
+  font-size: clamp(14px, 3vw, 18px);
   font-weight: 700;
   margin-bottom: 20px;
 }
 
 .seo-service-card h3 {
-  font-size: 16px;
+  font-size: clamp(12px, 3vw, 16px);
   font-weight: 750;
   color: var(--seo-dark);
   margin-bottom: 16px;
@@ -1107,7 +1107,7 @@
 }
 
 .seo-svc-bullets li {
-  font-size: 13px;
+  font-size: clamp(13px, 2vw, 15px);
   color: var(--seo-muted);
   display: flex;
   align-items: flex-start;
@@ -1169,7 +1169,7 @@
   background-color: var(--seo-light-bg);
   border: 2px solid var(--seo-border);
   color: var(--seo-dark);
-  font-size: 14px;
+  font-size: clamp(14px, 2vw, 16px);
   font-weight: 800;
   display: flex;
   align-items: center;
@@ -1245,7 +1245,7 @@
   align-items: center;
   justify-content: center;
   height: 120px;
-  width: 120px;
+  max-width: 120px; width: 100%;
   margin-top: 15px;
 }
 
@@ -1256,7 +1256,7 @@
 }
 
 .seo-dial-lbl {
-  font-size: 11px;
+  font-size: clamp(11px, 2vw, 13px);
   font-weight: 700;
   text-transform: uppercase;
   color: var(--seo-success);
@@ -1276,7 +1276,7 @@
 }
 
 .seo-hm-lbl {
-  font-size: 11px;
+  font-size: clamp(11px, 2vw, 13px);
   font-weight: 700;
   color: var(--seo-muted);
   text-transform: uppercase;
@@ -1285,7 +1285,7 @@
 }
 
 .seo-hm-val {
-  font-size: 16px;
+  font-size: clamp(12px, 3vw, 16px);
   font-weight: 800;
   color: var(--seo-dark);
 }
@@ -1323,7 +1323,7 @@
   background: none;
   border: none;
   padding: 6px 12px;
-  font-size: 12px;
+  font-size: clamp(12px, 2vw, 14px);
   font-weight: 700;
   color: var(--seo-muted);
   border-radius: 6px;
@@ -1422,13 +1422,13 @@
 }
 
 .seo-calc-label-row label {
-  font-size: 14px;
+  font-size: clamp(14px, 2vw, 16px);
   font-weight: 700;
   color: var(--seo-dark);
 }
 
 .seo-calc-val-box {
-  font-size: 16px;
+  font-size: clamp(12px, 3vw, 16px);
   font-weight: 800;
   color: var(--seo-primary);
   background-color: rgba(var(--seo-primary-rgb), 0.08);
@@ -1475,7 +1475,7 @@
 }
 
 .seo-calc-output-title {
-  font-size: 13px;
+  font-size: clamp(13px, 2vw, 15px);
   font-weight: 700;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.5);
@@ -1552,7 +1552,7 @@
 }
 
 .seo-ind-card h3 {
-  font-size: 14px;
+  font-size: clamp(14px, 2vw, 16px);
   font-weight: 750;
   color: var(--seo-dark);
 }
@@ -1583,7 +1583,7 @@
 }
 
 .seo-case-tag {
-  font-size: 11px;
+  font-size: clamp(11px, 2vw, 13px);
   font-weight: 800;
   text-transform: uppercase;
   color: var(--seo-primary);
@@ -1593,7 +1593,7 @@
 }
 
 .seo-case-card h3 {
-  font-size: 18px;
+  font-size: clamp(14px, 3vw, 18px);
   font-weight: 800;
   color: var(--seo-dark);
   margin-bottom: 12px;
@@ -1646,7 +1646,7 @@
 }
 
 .seo-case-m-val {
-  font-size: 18px;
+  font-size: clamp(14px, 3vw, 18px);
   font-weight: 800;
   color: var(--seo-success);
 }
@@ -1680,7 +1680,7 @@
 }
 
 .seo-ba-title {
-  font-size: 16px;
+  font-size: clamp(12px, 3vw, 16px);
   font-weight: 800;
   margin-bottom: 20px;
   display: flex;
@@ -1710,12 +1710,12 @@
 }
 
 .seo-ba-label {
-  font-size: 13px;
+  font-size: clamp(13px, 2vw, 15px);
   color: var(--seo-muted);
 }
 
 .seo-ba-val {
-  font-size: 14px;
+  font-size: clamp(14px, 2vw, 16px);
   font-weight: 700;
   color: var(--seo-dark);
 }
@@ -1838,7 +1838,7 @@
 }
 
 .seo-lead-point h4 {
-  font-size: 14px;
+  font-size: clamp(14px, 2vw, 16px);
   font-weight: 750;
   color: var(--seo-dark);
   margin: 0 0 4px 0;
@@ -1878,7 +1878,7 @@
 }
 
 .seo-form-group label {
-  font-size: 12px;
+  font-size: clamp(12px, 2vw, 14px);
   font-weight: 700;
   color: var(--seo-dark);
 }
@@ -1908,7 +1908,7 @@
 }
 
 .seo-error-txt {
-  font-size: 11px;
+  font-size: clamp(11px, 2vw, 13px);
   color: var(--seo-error);
   font-weight: 600;
 }
@@ -1945,14 +1945,14 @@
 }
 
 .seo-success-modal h3 {
-  font-size: 22px;
+  font-size: clamp(18px, 3vw, 22px);
   font-weight: 850;
   color: var(--seo-dark);
   margin: 16px 0 10px 0;
 }
 
 .seo-success-modal p {
-  font-size: 14px;
+  font-size: clamp(14px, 2vw, 16px);
   line-height: 1.6;
   color: var(--seo-muted);
   margin-bottom: 24px;
