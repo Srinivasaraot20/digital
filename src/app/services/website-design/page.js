@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
@@ -75,56 +75,56 @@ export default function WebsiteDesignPage() {
   const subtypes = [
     {
       title: "Business Websites",
-      icon: "ðŸ¢",
+      icon: "🏢",
       desc: "Establish a strong, professional corporate presence that articulates your value proposition, services, and trust factors.",
       timeline: "2-3 Weeks",
       cta: "Get Custom Business Site"
     },
     {
       title: "Corporate Portals",
-      icon: "ðŸŒ",
+      icon: "🌐",
       desc: "Comprehensive enterprise portals designed with advanced navigation systems, multi-department layouts, and custom integrations.",
       timeline: "4-5 Weeks",
       cta: "Request Enterprise Portal"
     },
     {
       title: "Landing Pages",
-      icon: "ðŸŽ¯",
+      icon: "🎯",
       desc: "High-impact single-page micro-sites designed with a single marketing focus to capture quality leads or sell a specific product.",
       timeline: "1-2 Weeks",
       cta: "Build Custom Landing Page"
     },
     {
       title: "Portfolio Websites",
-      icon: "ðŸŽ¨",
+      icon: "🎨",
       desc: "Stunning visual showcases tailored for creators, architects, photographers, and agencies to present work in high resolution.",
       timeline: "2 Weeks",
       cta: "Design Creative Portfolio"
     },
     {
       title: "E-Commerce Stores",
-      icon: "ðŸ›’",
+      icon: "🛒",
       desc: "Conversion-optimized online shops featuring product filters, cart flows, secure checkout gateways, and management dashboards.",
       timeline: "4 Weeks",
       cta: "Launch E-Commerce Store"
     },
     {
       title: "SaaS Product Sites",
-      icon: "âš¡",
+      icon: "⚡",
       desc: "Premium, modern marketing sites for software products, featuring interactive pricing tables, product grids, and CTA funnels.",
       timeline: "3 Weeks",
       cta: "Deploy SaaS Landing Page"
     },
     {
       title: "Startup Pages",
-      icon: "ðŸš€",
+      icon: "🚀",
       desc: "Fast, adaptable, and sleek website layouts that help newly funded startups validate product-market fit and capture emails.",
       timeline: "2 Weeks",
       cta: "Launch Startup Landing Page"
     },
     {
       title: "Custom Web Apps",
-      icon: "ðŸ› ï¸",
+      icon: "🛠️",
       desc: "Dynamic, database-driven web platforms built to your custom logic using React, Node.js, and API system connections.",
       timeline: "6-8 Weeks",
       cta: "Scope Custom Web App"
@@ -135,42 +135,42 @@ export default function WebsiteDesignPage() {
   const deliverables = [
     {
       title: "Custom Figma UI/UX Design",
-      icon: "ðŸŽ¨",
+      icon: "🎨",
       desc: "We design completely bespoke website mockups in Figma, tailored to your brand identity, colors, and layout requirements, before writing any code."
     },
     {
       title: "Mobile Responsive Layouts",
-      icon: "ðŸ“±",
+      icon: "📱",
       desc: "Every layout is built from the ground up to render flawlessly on iPhones, Android devices, tablets, and wide desktop screens."
     },
     {
       title: "CMS Integration Options",
-      icon: "âš™ï¸",
+      icon: "⚙️",
       desc: "We integrate powerful, flexible platforms like WordPress, Webflow, or headless options (Sanity, Strapi) so you can update text and posts easily."
     },
     {
       title: "Core Web Vitals & Speed Audit",
-      icon: "âš¡",
+      icon: "⚡",
       desc: "We employ deep code optimizations, image compressions, and server-side configurations to achieve sub-second load times."
     },
     {
       title: "Technical SEO Foundation",
-      icon: "ðŸ”",
+      icon: "🔍",
       desc: "We set up proper metadata, schema markups, structured data, semantic HTML tags, and clean sitemaps so search engines index you fast."
     },
     {
       title: "Conversion-Focused Copywriting",
-      icon: "âœï¸",
+      icon: "✍️",
       desc: "Our copywriters draft engaging headlines, body text, and call-to-actions tailored to speak directly to your target buyer persona."
     },
     {
       title: "Analytics & Event Tracking",
-      icon: "ðŸ“Š",
+      icon: "📊",
       desc: "We integrate Google Analytics 4, Tag Manager, Facebook Pixel, and Hotjar heatmaps to track every user click and conversion action."
     },
     {
       title: "SSL & Server Hardening",
-      icon: "ðŸ›¡ï¸",
+      icon: "🛡️",
       desc: "We secure your domains, configure free SSL certificates, implement spam-protected forms, and harden server access layers."
     }
   ];
@@ -287,12 +287,12 @@ export default function WebsiteDesignPage() {
 
   // Section 8: KPI Cards (6 cards)
   const kpis = [
-    { emoji: "ðŸ“ˆ", title: "SEO Visibility", items: ["Up to +140% organic reach", "Top page keywords rank", "Rich schema listings"] },
-    { emoji: "ðŸ’°", title: "Conversions Boost", items: ["Averaging 3.8% to 6.2%", "Dynamic CTA triggers", "Lead forms optimized"] },
-    { emoji: "ðŸ¤–", title: "Lead Automation", items: ["Automated CRM syncs", "WhatsApp lead capture", "Email trigger sequences"] },
-    { emoji: "ðŸŽ¨", title: "UX Excellence", items: ["0.1s input latency", "Heatmap tested flows", "Premium glassmorphism"] },
-    { emoji: "âš¡", title: "Web Performance", items: ["PageSpeed score > 95", "Next-gen image formats", "Global Edge CDN cache"] },
-    { emoji: "ðŸ› ï¸", title: "Tech Architecture", items: ["Next.js SSR / SSG", "Zero code bloat", "Secure REST API routes"] }
+    { emoji: "📈", title: "SEO Visibility", items: ["Up to +140% organic reach", "Top page keywords rank", "Rich schema listings"] },
+    { emoji: "💰", title: "Conversions Boost", items: ["Averaging 3.8% to 6.2%", "Dynamic CTA triggers", "Lead forms optimized"] },
+    { emoji: "🤖", title: "Lead Automation", items: ["Automated CRM syncs", "WhatsApp lead capture", "Email trigger sequences"] },
+    { emoji: "🎨", title: "UX Excellence", items: ["0.1s input latency", "Heatmap tested flows", "Premium glassmorphism"] },
+    { emoji: "⚡", title: "Web Performance", items: ["PageSpeed score > 95", "Next-gen image formats", "Global Edge CDN cache"] },
+    { emoji: "🛠️", title: "Tech Architecture", items: ["Next.js SSR / SSG", "Zero code bloat", "Secure REST API routes"] }
   ];
 
   // Section 9: Portfolio Showcases
@@ -383,7 +383,7 @@ export default function WebsiteDesignPage() {
           
           <div className="w-grid-content w-hero-grid">
             <div className="w-hero-content">
-              <span className="badge-premium">ðŸš€ Website Design Services</span>
+              <span className="badge-premium">🚀 Website Design Services</span>
               <h1>
                 High-Performance<br />
                 Website Design<br />
@@ -395,10 +395,10 @@ export default function WebsiteDesignPage() {
               </p>
               <div className="w-hero-buttons">
                 <button className="btn-primary" onClick={() => window.open("https://wa.me/919392251739", "_blank")}>
-                  ðŸ“… Book Consultation
+                  📅 Book Consultation
                 </button>
                 <Link href="#portfolio" className="btn-outline">
-                  â–¶ View Our Portfolio
+                  ▶ View Our Portfolio
                 </Link>
               </div>
             </div>
@@ -676,35 +676,35 @@ export default function WebsiteDesignPage() {
           <div className="w-grid-content">
             <div className="w-hero-bottom-bar">
               <div className="w-bar-item">
-                <div className="w-bar-icon rocket">ðŸš€</div>
+                <div className="w-bar-icon rocket">🚀</div>
                 <div className="w-bar-info">
                   <h4>SEO Optimized</h4>
                   <p>Built for higher rankings and better visibility</p>
                 </div>
               </div>
               <div className="w-bar-item">
-                <div className="w-bar-icon phone">ðŸ“±</div>
+                <div className="w-bar-icon phone">📱</div>
                 <div className="w-bar-info">
                   <h4>Fully Responsive</h4>
                   <p>Perfect experience on every device</p>
                 </div>
               </div>
               <div className="w-bar-item">
-                <div className="w-bar-icon bolt">âš¡</div>
+                <div className="w-bar-icon bolt">⚡</div>
                 <div className="w-bar-info">
                   <h4>Lightning Fast</h4>
                   <p>Optimized for speed and performance</p>
                 </div>
               </div>
               <div className="w-bar-item">
-                <div className="w-bar-icon target">ðŸŽ¯</div>
+                <div className="w-bar-icon target">🎯</div>
                 <div className="w-bar-info">
                   <h4>Conversion Focused</h4>
                   <p>Designed to turn visitors into customers</p>
                 </div>
               </div>
               <div className="w-bar-item">
-                <div className="w-bar-icon shield">ðŸ›¡ï¸</div>
+                <div className="w-bar-icon shield">🛡️</div>
                 <div className="w-bar-info">
                   <h4>Secure & Reliable</h4>
                   <p>Advanced security for complete peace of mind</p>
@@ -718,7 +718,7 @@ export default function WebsiteDesignPage() {
         <section className="w-section w-section-light">
           <div className="w-grid-content">
             <div className="w-title-centered">
-              <span className="badge-premium" style={{ background: "rgba(124, 58, 237, 0.08)", color: "var(--w-accent-purple)", border: "none" }}>ðŸŽ¯ Designed for Commercial Impact</span>
+              <span className="badge-premium" style={{ background: "rgba(124, 58, 237, 0.08)", color: "var(--w-accent-purple)", border: "none" }}>🎯 Designed for Commercial Impact</span>
               <h2>Websites Engineered to Drive <span className="w-text-orange">Business</span> <span className="w-text-purple">Results</span></h2>
               <p>
                 Every structural element we create serves a single business purpose: turning organic search traffic and ad clicks into qualified inquiries and revenue.
@@ -730,7 +730,7 @@ export default function WebsiteDesignPage() {
                 {/* Outdated Website Card */}
                 <div className="w-comparison-wrapper bad">
                   <div className="w-comparison-header bad">
-                    <span>âœ•</span> Outdated Website (Low Conversion)
+                    <span>✕</span> Outdated Website (Low Conversion)
                   </div>
                   <div className="w-comparison-card-grid">
                     <div className="w-comparison-left-mock">
@@ -773,35 +773,35 @@ export default function WebsiteDesignPage() {
 
                     <div className="w-comparison-right-list">
                       <div className="w-comparison-item">
-                        <span className="w-comp-icon">âœ•</span>
+                        <span className="w-comp-icon">✕</span>
                         <div className="w-comp-text">
                           <h4>Poor Visual Design</h4>
                           <p>Outdated layout that doesn't build trust</p>
                         </div>
                       </div>
                       <div className="w-comparison-item">
-                        <span className="w-comp-icon">âœ•</span>
+                        <span className="w-comp-icon">✕</span>
                         <div className="w-comp-text">
                           <h4>Not Mobile Friendly</h4>
                           <p>Frustrating experience on mobile devices</p>
                         </div>
                       </div>
                       <div className="w-comparison-item">
-                        <span className="w-comp-icon">âœ•</span>
+                        <span className="w-comp-icon">✕</span>
                         <div className="w-comp-text">
                           <h4>Slow Loading Speed</h4>
                           <p>High bounce rate and lost visitors</p>
                         </div>
                       </div>
                       <div className="w-comparison-item">
-                        <span className="w-comp-icon">âœ•</span>
+                        <span className="w-comp-icon">✕</span>
                         <div className="w-comp-text">
                           <h4>No Clear CTA</h4>
                           <p>Missed opportunities to capture leads</p>
                         </div>
                       </div>
                       <div className="w-comparison-item">
-                        <span className="w-comp-icon">âœ•</span>
+                        <span className="w-comp-icon">✕</span>
                         <div className="w-comp-text">
                           <h4>Low Conversion</h4>
                           <p>Visitors leave without taking action</p>
@@ -817,7 +817,7 @@ export default function WebsiteDesignPage() {
                 {/* Modern Website Card */}
                 <div className="w-comparison-wrapper good">
                   <div className="w-comparison-header good">
-                    <span>âœ”</span> Modern High-Performance Website
+                    <span>✔</span> Modern High-Performance Website
                   </div>
                   <div className="w-comparison-card-grid">
                     <div className="w-comparison-left-mock">
@@ -830,7 +830,7 @@ export default function WebsiteDesignPage() {
                         <div className="w-modern-body">
                           <div className="w-modern-hero-left">
                             <div className="w-modern-header">
-                              <span className="w-modern-logo" style={{ fontSize: "5px" }}>âš¡ Nexora</span>
+                              <span className="w-modern-logo" style={{ fontSize: "5px" }}>⚡ Nexora</span>
                               <div className="w-modern-nav">
                                 <span>Home</span>
                                 <span>Services</span>
@@ -867,35 +867,35 @@ export default function WebsiteDesignPage() {
 
                     <div className="w-comparison-right-list">
                       <div className="w-comparison-item">
-                        <span className="w-comp-icon">âœ”</span>
+                        <span className="w-comp-icon">✔</span>
                         <div className="w-comp-text">
                           <h4>Modern & Professional</h4>
                           <p>Premium design that builds instant trust</p>
                         </div>
                       </div>
                       <div className="w-comparison-item">
-                        <span className="w-comp-icon">âœ”</span>
+                        <span className="w-comp-icon">✔</span>
                         <div className="w-comp-text">
                           <h4>Fully Responsive</h4>
                           <p>Seamless experience on all devices</p>
                         </div>
                       </div>
                       <div className="w-comparison-item">
-                        <span className="w-comp-icon">âœ”</span>
+                        <span className="w-comp-icon">✔</span>
                         <div className="w-comp-text">
                           <h4>Lightning Fast</h4>
                           <p>Ultra-fast load times keep users engaged</p>
                         </div>
                       </div>
                       <div className="w-comparison-item">
-                        <span className="w-comp-icon">âœ”</span>
+                        <span className="w-comp-icon">✔</span>
                         <div className="w-comp-text">
                           <h4>Clear CTA Strategy</h4>
                           <p>Action-driven design that converts</p>
                         </div>
                       </div>
                       <div className="w-comparison-item">
-                        <span className="w-comp-icon">âœ”</span>
+                        <span className="w-comp-icon">✔</span>
                         <div className="w-comp-text">
                           <h4>High Conversion</h4>
                           <p>Optimized for leads, sales & growth</p>
@@ -909,51 +909,51 @@ export default function WebsiteDesignPage() {
               <div className="w-needs-content">
                 <ul className="w-needs-bullets-premium">
                   <li>
-                    <span className="w-needs-bullets-premium-icon">âœ“</span>
+                    <span className="w-needs-bullets-premium-icon">✓</span>
                     <div><strong>Build credibility</strong> and trust with premium brand-focused design</div>
                   </li>
                   <li>
-                    <span className="w-needs-bullets-premium-icon">âœ“</span>
+                    <span className="w-needs-bullets-premium-icon">✓</span>
                     <div><strong>Deliver seamless mobile experiences</strong> that users love</div>
                   </li>
                   <li>
-                    <span className="w-needs-bullets-premium-icon">âœ“</span>
+                    <span className="w-needs-bullets-premium-icon">✓</span>
                     <div><strong>Load in a blink</strong> to reduce bounce rates and increase engagement</div>
                   </li>
                   <li>
-                    <span className="w-needs-bullets-premium-icon">âœ“</span>
+                    <span className="w-needs-bullets-premium-icon">✓</span>
                     <div><strong>Integrate with CRM</strong>, analytics, and marketing tools effortlessly</div>
                   </li>
                   <li>
-                    <span className="w-needs-bullets-premium-icon">âœ“</span>
+                    <span className="w-needs-bullets-premium-icon">✓</span>
                     <div><strong>Optimize for conversions</strong> with data-driven UX and CTAs</div>
                   </li>
                 </ul>
 
                 <div className="w-needs-grid-cards">
                   <div className="w-needs-mini-card">
-                    <div className="w-needs-mini-card-icon trust">ðŸ›¡ï¸</div>
+                    <div className="w-needs-mini-card-icon trust">🛡️</div>
                     <h4>Higher Trust</h4>
                     <p>Establish brand authority with premium layout and visual consistency.</p>
-                    <span className="w-needs-mini-card-arrow trust">â†’</span>
+                    <span className="w-needs-mini-card-arrow trust">→</span>
                   </div>
                   <div className="w-needs-mini-card">
-                    <div className="w-needs-mini-card-icon ux">ðŸ“±</div>
+                    <div className="w-needs-mini-card-icon ux">📱</div>
                     <h4>Seamless UX</h4>
                     <p>Frictionless navigation that guides users straight to action.</p>
-                    <span className="w-needs-mini-card-arrow ux">â†’</span>
+                    <span className="w-needs-mini-card-arrow ux">→</span>
                   </div>
                   <div className="w-needs-mini-card">
-                    <div className="w-needs-mini-card-icon speed">âš¡</div>
+                    <div className="w-needs-mini-card-icon speed">⚡</div>
                     <h4>Sub-Second Speed</h4>
                     <p>Load pages in under 1 second to retain more organic users.</p>
-                    <span className="w-needs-mini-card-arrow speed">â†’</span>
+                    <span className="w-needs-mini-card-arrow speed">→</span>
                   </div>
                   <div className="w-needs-mini-card">
-                    <div className="w-needs-mini-card-icon conversion">ðŸ“ˆ</div>
+                    <div className="w-needs-mini-card-icon conversion">📈</div>
                     <h4>10X Conversions</h4>
                     <p>Capture and convert more leads with strategic form placements.</p>
-                    <span className="w-needs-mini-card-arrow conversion">â†’</span>
+                    <span className="w-needs-mini-card-arrow conversion">→</span>
                   </div>
                 </div>
               </div>
@@ -982,7 +982,7 @@ export default function WebsiteDesignPage() {
                   <p>{sub.desc}</p>
                   
                   <div className="w-type-meta">
-                    <span className="w-type-timeline">â³ {sub.timeline}</span>
+                    <span className="w-type-timeline">⏳ {sub.timeline}</span>
                     <button className="w-type-cta" onClick={() => openWhatsAppQuote(sub.title)}>
                       Get Quote
                     </button>
@@ -1053,7 +1053,7 @@ export default function WebsiteDesignPage() {
                 {activeStep === 0 && (
                   <div className="w-process-visual-graphic" style={{ opacity: 1 }}>
                     <div style={{ padding: "24px", background: "#fff", border: "1px solid var(--w-border)", borderRadius: "16px", textAlign: "center" }}>
-                      <h4 style={{ margin: "0 0 12px 0", color: "var(--w-accent-orange)", fontWeight: "800" }}>ðŸ“ˆ Discovery & Strategy</h4>
+                      <h4 style={{ margin: "0 0 12px 0", color: "var(--w-accent-orange)", fontWeight: "800" }}>📈 Discovery & Strategy</h4>
                       <p style={{ fontSize: "13px", color: "var(--w-text-muted)", margin: "0 0 16px 0" }}>
                         Mapping business acquisition funnels and listing target visitor actions.
                       </p>
@@ -1080,7 +1080,7 @@ export default function WebsiteDesignPage() {
                 {activeStep === 2 && (
                   <div className="w-process-visual-graphic" style={{ opacity: 1 }}>
                     <div style={{ padding: "24px", background: "#fff", border: "1px solid var(--w-border)", borderRadius: "16px" }}>
-                      <h4 style={{ margin: "0 0 12px 0", color: "var(--w-accent-blue)", fontWeight: "800", textAlign: "center" }}>âœï¸ UX Blueprint & Wireframes</h4>
+                      <h4 style={{ margin: "0 0 12px 0", color: "var(--w-accent-blue)", fontWeight: "800", textAlign: "center" }}>âœ️ UX Blueprint & Wireframes</h4>
                       <p style={{ fontSize: "12px", color: "var(--w-text-muted)", marginBottom: "16px", textAlign: "center" }}>
                         Structuring low-fidelity conversion points.
                       </p>
@@ -1097,7 +1097,7 @@ export default function WebsiteDesignPage() {
                 {activeStep === 3 && (
                   <div className="w-process-visual-graphic" style={{ opacity: 1 }}>
                     <div style={{ padding: "24px", background: "#fff", border: "1px solid var(--w-border)", borderRadius: "16px", textAlign: "center" }}>
-                      <h4 style={{ margin: "0 0 12px 0", color: "var(--w-accent-pink)", fontWeight: "800" }}>ðŸŽ¨ High-Fidelity Figma Design</h4>
+                      <h4 style={{ margin: "0 0 12px 0", color: "var(--w-accent-pink)", fontWeight: "800" }}>🎨 High-Fidelity Figma Design</h4>
                       <div style={{ width: "56px", height: "56px", borderRadius: "50%", background: "linear-gradient(135deg, var(--w-accent-purple), var(--w-accent-pink))", margin: "0 auto 12px auto", display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", fontWeight: "900" }}>UI</div>
                       <p style={{ fontSize: "12px", color: "var(--w-text-muted)", margin: 0 }}>
                         Custom layout design with balanced typography and glassmorphic icons.
@@ -1108,7 +1108,7 @@ export default function WebsiteDesignPage() {
                 {activeStep === 4 && (
                   <div className="w-process-visual-graphic" style={{ opacity: 1 }}>
                     <div style={{ padding: "24px", background: "#fff", border: "1px solid var(--w-border)", borderRadius: "16px" }}>
-                      <h4 style={{ margin: "0 0 12px 0", color: "var(--w-accent-green)", fontWeight: "800", textAlign: "center" }}>ðŸ’» Clean React & Next.js Coding</h4>
+                      <h4 style={{ margin: "0 0 12px 0", color: "var(--w-accent-green)", fontWeight: "800", textAlign: "center" }}>💻 Clean React & Next.js Coding</h4>
                       <pre style={{ fontSize: "11px", color: "#0f172a", background: "#f8f9fc", padding: "12px", borderRadius: "8px", margin: 0, fontFamily: "monospace" }}>
                         {`export default function App() {\n  return (\n    <div className="app">\n      <Header glass={true} />\n    </div>\n  );\n}`}
                       </pre>
@@ -1118,7 +1118,7 @@ export default function WebsiteDesignPage() {
                 {activeStep === 5 && (
                   <div className="w-process-visual-graphic" style={{ opacity: 1 }}>
                     <div style={{ padding: "24px", background: "#fff", border: "1px solid var(--w-border)", borderRadius: "16px", textAlign: "center" }}>
-                      <h4 style={{ margin: "0 0 12px 0", color: "var(--w-accent-orange)", fontWeight: "800" }}>âš¡ Rigorous Speed Testing</h4>
+                      <h4 style={{ margin: "0 0 12px 0", color: "var(--w-accent-orange)", fontWeight: "800" }}>⚡ Rigorous Speed Testing</h4>
                       <div style={{ fontSize: "36px", fontWeight: "900", color: "var(--w-success)", marginBottom: "8px" }}>100/100</div>
                       <p style={{ fontSize: "12px", color: "var(--w-text-muted)", margin: 0 }}>
                         Speed Index: 0.3s. Cumulative Layout Shift: 0. Core Web Vitals passed.
@@ -1129,7 +1129,7 @@ export default function WebsiteDesignPage() {
                 {activeStep === 6 && (
                   <div className="w-process-visual-graphic" style={{ opacity: 1 }}>
                     <div style={{ padding: "24px", background: "#fff", border: "1px solid var(--w-border)", borderRadius: "16px", textAlign: "center" }}>
-                      <h4 style={{ margin: "0 0 12px 0", color: "var(--w-accent-teal)", fontWeight: "800" }}>ðŸš€ Server Setup & Launch</h4>
+                      <h4 style={{ margin: "0 0 12px 0", color: "var(--w-accent-teal)", fontWeight: "800" }}>🚀 Server Setup & Launch</h4>
                       <p style={{ fontSize: "13px", color: "var(--w-success)", fontWeight: "700", margin: "0 0 12px 0" }}>
                         Domain mapped successfully!
                       </p>
@@ -1142,7 +1142,7 @@ export default function WebsiteDesignPage() {
                 {activeStep === 7 && (
                   <div className="w-process-visual-graphic" style={{ opacity: 1 }}>
                     <div style={{ padding: "24px", background: "#fff", border: "1px solid var(--w-border)", borderRadius: "16px", textAlign: "center" }}>
-                      <h4 style={{ margin: "0 0 12px 0", color: "var(--w-accent-purple)", fontWeight: "800" }}>ðŸ› ï¸ Support & Marketing Iterations</h4>
+                      <h4 style={{ margin: "0 0 12px 0", color: "var(--w-accent-purple)", fontWeight: "800" }}>🛠️ Support & Marketing Iterations</h4>
                       <p style={{ fontSize: "12px", color: "var(--w-text-muted)", margin: "0 0 16px 0" }}>
                         Monthly website updates, server security scans, and database backup pipelines.
                       </p>
@@ -1172,7 +1172,7 @@ export default function WebsiteDesignPage() {
             <div className="w-features-checklist-grid">
               {featuresChecklist.map((feat, idx) => (
                 <div className="w-feature-check-card" key={idx}>
-                  <div className="w-feature-check-icon">âœ”</div>
+                  <div className="w-feature-check-icon">✔</div>
                   <span>{feat}</span>
                 </div>
               ))}
@@ -1200,7 +1200,7 @@ export default function WebsiteDesignPage() {
                   <div className="w-tech-logos-grid">
                     {cat.techs.map((tech, techIdx) => (
                       <span className="w-tech-badge" key={techIdx}>
-                        <span>âœ”</span> {tech}
+                        <span>✔</span> {tech}
                       </span>
                     ))}
                   </div>
@@ -1316,7 +1316,7 @@ export default function WebsiteDesignPage() {
                   <div className="w-project-tech-logos">
                     {proj.techs.map((tech, techIdx) => (
                       <span className="w-project-tech-tag" key={techIdx}>
-                        {techIdx > 0 && " â€¢ "} {tech}
+                        {techIdx > 0 && " • "} {tech}
                       </span>
                     ))}
                   </div>
@@ -1327,31 +1327,7 @@ export default function WebsiteDesignPage() {
         </section>
 
         {/* SECTION 10: RESULTS STATS */}
-        <section className="w-results-section">
-          <div className="w-grid-bg" style={{ opacity: 0.05 }}></div>
-          <div className="w-results-grid">
-            <div className="w-result-card">
-              <div className="w-result-num"><AnimatedCounter value="99.8%" /></div>
-              <div className="w-result-label">Client Satisfaction</div>
-            </div>
-            <div className="w-result-card">
-              <div className="w-result-num"><AnimatedCounter value="0.4s" /></div>
-              <div className="w-result-label">Avg Load Speed</div>
-            </div>
-            <div className="w-result-card">
-              <div className="w-result-num"><AnimatedCounter value="98%" /></div>
-              <div className="w-result-label">Conversion Rate Lift</div>
-            </div>
-            <div className="w-result-card">
-              <div className="w-result-num"><AnimatedCounter value="100" /></div>
-              <div className="w-result-label">PageSpeed Score</div>
-            </div>
-            <div className="w-result-card">
-              <div className="w-result-num"><AnimatedCounter value="150+" /></div>
-              <div className="w-result-label">Websites Launched</div>
-            </div>
-          </div>
-        </section>
+
 
         {/* SECTION 11: TESTIMONIALS */}
         <section className="w-section w-section-light">
@@ -1368,7 +1344,7 @@ export default function WebsiteDesignPage() {
               {/* Google Review Badge Widget Placeholder */}
               <div className="w-reviews-slider-card">
                 <div className="w-review-stars">
-                  {"â˜…".repeat(testimonials[activeTestimonial].stars)}
+                  {"★".repeat(testimonials[activeTestimonial].stars)}
                 </div>
                 <p className="w-review-text">"{testimonials[activeTestimonial].text}"</p>
                 <h4 className="w-review-author">{testimonials[activeTestimonial].author}</h4>
@@ -1411,7 +1387,7 @@ export default function WebsiteDesignPage() {
                 <span className="w-price-badge">Starter</span>
                 <h3>High-Converting Landing Page</h3>
                 <p className="w-price-desc">Perfect for newly launched startups, target ad campaigns, or single product validations.</p>
-                <div className="w-price-amount">â‚¹14,999 <span>/ fixed</span></div>
+                <div className="w-price-amount">₹14,999 <span>/ fixed</span></div>
                 <ul className="w-price-features-list">
                   <li>Single-page custom Figma design</li>
                   <li>Responsive code architecture</li>
@@ -1421,7 +1397,7 @@ export default function WebsiteDesignPage() {
                   <li>1 week delivery timeline</li>
                 </ul>
                 <button className="btn-primary w-price-btn-stretch" onClick={() => openWhatsAppQuote("High-Converting Landing Page")}>
-                  ðŸ“… Get Started Now
+                  📅 Get Started Now
                 </button>
               </div>
 
@@ -1430,7 +1406,7 @@ export default function WebsiteDesignPage() {
                 <span className="w-price-badge" style={{ backgroundColor: "var(--w-accent-orange)", color: "#fff" }}>Recommended</span>
                 <h3>Premium Corporate Website</h3>
                 <p className="w-price-desc">Ideal for expanding small and medium companies looking to establish market authority.</p>
-                <div className="w-price-amount">â‚¹29,999 <span>/ fixed</span></div>
+                <div className="w-price-amount">₹29,999 <span>/ fixed</span></div>
                 <ul className="w-price-features-list">
                   <li>Up to 7 custom structured pages</li>
                   <li>Bespoke Figma UI/UX prototypes</li>
@@ -1441,7 +1417,7 @@ export default function WebsiteDesignPage() {
                   <li>1 month post-launch support</li>
                 </ul>
                 <button className="btn-primary w-price-btn-stretch" onClick={() => openWhatsAppQuote("Premium Corporate Website")}>
-                  ðŸ“… Get Started Now
+                  📅 Get Started Now
                 </button>
               </div>
 
@@ -1450,7 +1426,7 @@ export default function WebsiteDesignPage() {
                 <span className="w-price-badge" style={{ backgroundColor: "rgba(124, 58, 237, 0.08)", color: "var(--w-accent-purple)" }}>Enterprise</span>
                 <h3>Custom SaaS & Web Platform</h3>
                 <p className="w-price-desc">Tailored for SaaS products, database tools, e-commerce networks, or complex dashboards.</p>
-                <div className="w-price-amount">â‚¹59,999+ <span>/ custom scope</span></div>
+                <div className="w-price-amount">₹59,999+ <span>/ custom scope</span></div>
                 <ul className="w-price-features-list">
                   <li>Fully custom React / Node / MERN stack code</li>
                   <li>Unlimited database scale & dynamic views</li>
@@ -1461,7 +1437,7 @@ export default function WebsiteDesignPage() {
                   <li>3 months priority tech support</li>
                 </ul>
                 <button className="btn-primary w-price-btn-stretch" onClick={() => openWhatsAppQuote("Custom SaaS & Web Platform")}>
-                  ðŸ“… Get Started Now
+                  📅 Get Started Now
                 </button>
               </div>
             </div>
@@ -1506,10 +1482,10 @@ export default function WebsiteDesignPage() {
               </p>
               <div className="w-cta-buttons">
                 <button className="btn-primary" onClick={() => window.dispatchEvent(new CustomEvent("trigger-consultation-modal", { detail: { service: "Website Design" } }))}>
-                  ðŸ“… Book Free Consultation
+                  📅 Book Free Consultation
                 </button>
                 <button className="btn-outline" onClick={() => window.open("mailto:info@digitalmarketingtenx.com")}>
-                  âœ‰ï¸ Contact Email Us
+                  ✉️ Contact Email Us
                 </button>
               </div>
             </div>
