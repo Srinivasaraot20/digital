@@ -1,0 +1,61 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model ConsultationRequest {
+  id                     Int      @id @default(autoincrement())
+  full_name              String
+  company_name           String?
+  email                  String
+  phone                  String
+  whatsapp               String?
+  website                String?
+  location               String?
+  business_type          String
+  industry               String?
+  marketing_budget       String?
+  project_start          String?
+  preferred_contact_method String
+  services_interested    String   // JSON stringified array
+  project_description    String?
+  status                 String   @default("Pending")
+  created_at             DateTime @default(now())
+}
+
+model ConsultationBooking {
+  id                     Int      @id @default(autoincrement())
+  full_name              String
+  company_name           String?
+  email                  String
+  phone                  String
+  whatsapp               String?
+  website                String?
+  location               String?
+  business_type          String
+  industry               String
+  company_size           String?
+  monthly_revenue        String?
+  services_interested    String   // JSON stringified array
+  marketing_goals        String   // JSON stringified array
+  estimated_budget       String?
+  required_timeline      String?
+  project_description    String?
+  preferred_contact_method String
+  preferred_contact_time String?
+  privacy_policy         Boolean  @default(false)
+  communication_consent  Boolean  @default(false)
+  booking_status         String   @default("Pending")
+  created_at             DateTime @default(now())
+}
+
+model AdminUser {
+  id           Int      @id @default(autoincrement())
+  username     String   @unique
+  passwordHash String
+  created_at   DateTime @default(now())
+}
