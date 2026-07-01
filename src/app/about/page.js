@@ -323,24 +323,88 @@ export default function AboutPage() {
           <div className="radial-glow glow-2"></div>
           
           <div className="about-grid-content">
-            <div className="about-hero-grid">
-              <div className="about-hero-content">
-                <span className="badge-premium">🚀 ABOUT DIGITAL MARKETING TENX</span>
-                <h1>
-                  About Digital Marketing TenX<br />
-                  Achieve <span className="grad-sustainable">Sustainable</span><br />
-                  <span className="grad-digital-growth">Digital Growth</span>
+            <div className="about-hero-grid" style={{ display: "grid", gridTemplateColumns: "1.2fr 1fr", gap: "40px", alignItems: "center" }}>
+              <div className="about-hero-content" style={{ textAlign: "left" }}>
+                <span className="badge-premium" style={{ 
+                  display: "inline-flex", 
+                  alignItems: "center", 
+                  gap: "6px", 
+                  border: "1px solid #ff6b00", 
+                  color: "#ff6b00", 
+                  background: "#ffffff", 
+                  padding: "6px 16px", 
+                  borderRadius: "30px", 
+                  fontSize: "11px", 
+                  fontWeight: "700", 
+                  textTransform: "uppercase", 
+                  letterSpacing: "1px", 
+                  marginBottom: "20px" 
+                }}>
+                  🚀 ABOUT DIGITAL MARKETING TENX
+                </span>
+                <h1 style={{ fontSize: "52px", fontWeight: "900", color: "#0f172a", lineHeight: "1.15", marginBottom: "20px", letterSpacing: "-1.5px" }}>
+                  We Drive<br />
+                  <span style={{ color: "#3b82f6" }}>Digital</span> <span style={{ color: "#8b5cf6" }}>Growth</span>.<br />
+                  You Achieve More.
                 </h1>
-                <p className="hero-subtitle">
-                  We are a technology-driven digital marketing agency combining creativity, performance marketing, <span style={{ whiteSpace: "nowrap" }}>AI automation</span>, and data to help businesses grow faster and smarter.
+                <p className="hero-subtitle" style={{ fontSize: "16px", color: "#64748b", lineHeight: "1.7", marginBottom: "32px", maxWidth: "580px" }}>
+                  Digital Marketing TenX is a technology-driven digital marketing agency combining creativity, performance marketing, AI automation, and data to help businesses grow faster and smarter.
                 </p>
-                <div className="about-hero-btns">
-                  <button className="btn-primary" onClick={() => window.dispatchEvent(new CustomEvent("trigger-consultation-modal"))}>📅 Book Free Consultation</button>
-                  <button className="btn-outline" onClick={() => window.open("https://wa.me/919392251739", "_blank")}>▶ Watch Our Story</button>
+
+                {/* 4 Feature pillars */}
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "16px", marginBottom: "36px" }} className="about-pillars-row">
+                  <div>
+                    <div style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "36px", height: "36px", borderRadius: "50%", background: "#eff6ff", color: "#3b82f6", marginBottom: "10px" }}>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle>
+                      </svg>
+                    </div>
+                    <h5 style={{ fontSize: "13.5px", fontWeight: "700", color: "#0f172a", marginBottom: "4px" }}>Result Driven</h5>
+                    <p style={{ fontSize: "11.5px", color: "#64748b", lineHeight: "1.4", margin: "0" }}>Strategies that deliver measurable growth.</p>
+                  </div>
+                  <div>
+                    <div style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "36px", height: "36px", borderRadius: "50%", background: "#fdf2f8", color: "#db2777", marginBottom: "10px" }}>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                        <line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line>
+                      </svg>
+                    </div>
+                    <h5 style={{ fontSize: "13.5px", fontWeight: "700", color: "#0f172a", marginBottom: "4px" }}>Data Backed</h5>
+                    <p style={{ fontSize: "11.5px", color: "#64748b", lineHeight: "1.4", margin: "0" }}>Smart decisions powered by data.</p>
+                  </div>
+                  <div>
+                    <div style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "36px", height: "36px", borderRadius: "50%", background: "#fff7ed", color: "#ea580c", marginBottom: "10px" }}>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect>
+                      </svg>
+                    </div>
+                    <h5 style={{ fontSize: "13.5px", fontWeight: "700", color: "#0f172a", marginBottom: "4px" }}>AI Powered</h5>
+                    <p style={{ fontSize: "11.5px", color: "#64748b", lineHeight: "1.4", margin: "0" }}>Automation for max performance.</p>
+                  </div>
+                  <div>
+                    <div style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "36px", height: "36px", borderRadius: "50%", background: "#f0fdf4", color: "#16a34a", marginBottom: "10px" }}>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle>
+                      </svg>
+                    </div>
+                    <h5 style={{ fontSize: "13.5px", fontWeight: "700", color: "#0f172a", marginBottom: "4px" }}>Expert Team</h5>
+                    <p style={{ fontSize: "11.5px", color: "#64748b", lineHeight: "1.4", margin: "0" }}>Experienced staff dedicated to you.</p>
+                  </div>
+                </div>
+
+                <div style={{ display: "flex", alignItems: "center", gap: "20px", marginBottom: "40px", flexWrap: "wrap" }}>
+                  <button className="btn-primary" onClick={() => window.dispatchEvent(new CustomEvent("trigger-consultation-modal"))}>
+                    📅 Book Free Consultation
+                  </button>
+                  <div style={{ display: "flex", alignItems: "center", gap: "8px" }} className="lets-grow-handwriting">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f97316" strokeWidth="2.5">
+                      <path d="M3 12a9 9 0 0 1 9-9 9 9 0 0 1 9 9 9 9 0 0 1-9 9m0-18v18" strokeDasharray="3 3" />
+                    </svg>
+                    <span style={{ fontSize: "14px", color: "#f97316", fontWeight: "600", fontStyle: "italic" }}>Let's grow your business!</span>
+                  </div>
                 </div>
 
                 {/* Overlapping Avatars and Google Reviews */}
-                <div className="hero-trust-row">
+                <div className="hero-trust-row" style={{ display: "flex", alignItems: "center", gap: "30px", flexWrap: "wrap" }}>
                   <div className="trust-brands">
                     <div className="avatar-group">
                       <div className="avatar-circle">AS</div>
@@ -354,13 +418,13 @@ export default function AboutPage() {
                     </div>
                   </div>
 
-                  <div className="trust-reviews">
-                    <div className="google-review-icon">G</div>
+                  <div className="trust-reviews" style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                    <div className="google-review-icon" style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "32px", height: "32px", borderRadius: "50%", background: "#f1f5f9", fontWeight: "bold", color: "#4285F4" }}>G</div>
                     <div>
-                      <div className="review-rating-val">
-                        4.9/5 <span className="review-stars-small">★★★★★</span>
+                      <div className="review-rating-val" style={{ display: "flex", alignItems: "center", gap: "6px", fontWeight: "700" }}>
+                        4.9/5 <span className="review-stars-small" style={{ color: "#f59e0b" }}>★★★★★</span>
                       </div>
-                      <div className="trust-text" style={{ fontSize: "10px", marginTop: "1px" }}>
+                      <div className="trust-text" style={{ fontSize: "11px", color: "#64748b" }}>
                         Based on 120+ Reviews
                       </div>
                     </div>
@@ -369,134 +433,14 @@ export default function AboutPage() {
               </div>
 
               {/* Visual Interactive Dashboard & Floating Cards */}
-              <div className="about-hero-visual">
-                {/* Floating Metric Card 1 */}
-                <div className="floating-metric float-delivered">
-                  <div className="floating-icon" style={{ backgroundColor: "#fff7ed", color: "#ff6b00" }}>📂</div>
-                  <div className="floating-info">
-                    <h4>500+</h4>
-                    <p>Projects Delivered</p>
-                  </div>
-                </div>
-
-                {/* Floating Metric Card 2 */}
-                <div className="floating-metric float-retention">
-                  <div className="floating-icon" style={{ backgroundColor: "#fdf4ff", color: "#d946ef" }}>📊</div>
-                  <div className="floating-info">
-                    <h4>97%</h4>
-                    <p>Client Retention</p>
-                  </div>
-                </div>
-
-                {/* Floating Metric Card 3 */}
-                <div className="floating-metric float-clients">
-                  <div className="floating-icon" style={{ backgroundColor: "#fffbeb", color: "#f59e0b" }}>😊</div>
-                  <div className="floating-info">
-                    <h4>150+</h4>
-                    <p>Happy Clients</p>
-                  </div>
-                </div>
-
-                {/* Floating Metric Card 4 */}
-                <div className="floating-metric float-growth">
-                  <div className="floating-icon" style={{ backgroundColor: "#eff6ff", color: "#3b82f6" }}>🚀</div>
-                  <div className="floating-info">
-                    <h4>10X</h4>
-                    <p>Average Growth</p>
-                  </div>
-                </div>
-
-                {/* Main Dashboard Panel */}
-                <div className="hero-dashboard-mockup">
-                  <div className="mockup-header">
-                    <div className="mockup-dots">
-                      <span className="mockup-dot red"></span>
-                      <span className="mockup-dot yellow"></span>
-                      <span className="mockup-dot green"></span>
-                    </div>
-                    <span className="mockup-title">
-                      <span className="mockup-title-dot"></span>
-                      TENX PERFORMANCE LIVE
-                    </span>
-                  </div>
-
-                  <div className="mockup-metrics-row">
-                    <div className="mockup-metric-card">
-                      <div className="mockup-label">Total Revenue Generated</div>
-                      <div className="mockup-value">
-                        ₹ 10.2 Cr+
-                      </div>
-                      <div className="mockup-subtext">
-                        <span className="mockup-change">▲ 24.5%</span> vs last 30d
-                      </div>
-                    </div>
-                    <div className="mockup-metric-card">
-                      <div className="mockup-label">Qualified Leads</div>
-                      <div className="mockup-value">
-                        12,450+
-                      </div>
-                      <div className="mockup-subtext">
-                        <span className="mockup-change">▲ 18.7%</span> vs last 30d
-                      </div>
-                    </div>
-                    <div className="mockup-metric-card">
-                      <div className="mockup-label">Avg. ROAS</div>
-                      <div className="mockup-value">
-                        5.8X
-                      </div>
-                      <div className="mockup-subtext">
-                        <span className="mockup-change">▲ 24.3%</span> vs last 30d
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="mockup-chart-card">
-                    <div className="mockup-chart-header">
-                      <span className="chart-title">Growth Overview</span>
-                      <span className="chart-select">Last 6 Months ▾</span>
-                    </div>
-                    
-                    {/* SVG Line Graph illustrating mock-up curve */}
-                    <div style={{ position: "relative", width: "100%", height: "100px", marginTop: "10px" }}>
-                      <svg viewBox="0 0 400 100" width="100%" height="100%" style={{ overflow: "visible" }}>
-                        <defs>
-                          <linearGradient id="chartGradient" x1="0" y1="0" x2="0" y2="1">
-                            <stop offset="0%" stopColor="#ff6b00" stopOpacity="0.25" />
-                            <stop offset="100%" stopColor="#3b82f6" stopOpacity="0.0" />
-                          </linearGradient>
-                        </defs>
-                        {/* Gradient Area under curve */}
-                        <path d="M 0,90 Q 60,80 120,85 T 240,65 T 320,50 T 380,30 L 380,100 L 0,100 Z" fill="url(#chartGradient)" />
-                        {/* Curve Path line */}
-                        <path d="M 0,90 Q 60,80 120,85 T 240,65 T 320,50 T 380,30" fill="none" stroke="url(#chartLineGrad)" strokeWidth="3.5" strokeLinecap="round" />
-                        
-                        <linearGradient id="chartLineGrad" x1="0" y1="0" x2="1" y2="0">
-                          <stop offset="0%" stopColor="#3b82f6" />
-                          <stop offset="50%" stopColor="#d946ef" />
-                          <stop offset="100%" stopColor="#ff6b00" />
-                        </linearGradient>
-
-                        {/* Grid lines */}
-                        <line x1="0" y1="0" x2="400" y2="0" stroke="rgba(0,0,0,0.03)" strokeWidth="1" strokeDasharray="4 4" />
-                        <line x1="0" y1="33" x2="400" y2="33" stroke="rgba(0,0,0,0.03)" strokeWidth="1" strokeDasharray="4 4" />
-                        <line x1="0" y1="66" x2="400" y2="66" stroke="rgba(0,0,0,0.03)" strokeWidth="1" strokeDasharray="4 4" />
-                        
-                        {/* Timeline markers */}
-                        <text x="5" y="98" fill="#94a3b8" fontSize="8" fontWeight="600">Jan</text>
-                        <text x="75" y="98" fill="#94a3b8" fontSize="8" fontWeight="600">Feb</text>
-                        <text x="145" y="98" fill="#94a3b8" fontSize="8" fontWeight="600">Mar</text>
-                        <text x="215" y="98" fill="#94a3b8" fontSize="8" fontWeight="600">Apr</text>
-                        <text x="285" y="98" fill="#94a3b8" fontSize="8" fontWeight="600">May</text>
-                        <text x="355" y="98" fill="#94a3b8" fontSize="8" fontWeight="600">Jun</text>
-
-                        {/* Highlight Peak Dot */}
-                        <circle cx="380" cy="30" r="5" fill="#ff6b00" stroke="#ffffff" strokeWidth="2" />
-                      </svg>
-                      {/* Interactive Badge on Peak */}
-                      <div className="mockup-badge" style={{ position: "absolute", right: "-10px", top: "0" }}>10X Growth</div>
-                    </div>
-                  </div>
-                </div>
+              <div className="about-hero-visual" style={{ position: "relative", width: "100%", height: "450px" }}>
+                <Image
+                  src="/about.png"
+                  alt="Digital Marketing TenX Rocket Performance Dashboard"
+                  fill
+                  style={{ objectFit: "contain", objectPosition: "center right" }}
+                  priority
+                />
               </div>
             </div>
 
@@ -724,57 +668,7 @@ export default function AboutPage() {
               </div>
 
               {/* Achievements bottom strip */}
-              <div className="why-achievements-strip-premium">
-                <div className="why-ach-item">
-                  <div className="why-ach-icon wa-orange">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                      <circle cx="9" cy="7" r="4" />
-                      <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                      <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4>500+</h4>
-                    <p>Projects Delivered</p>
-                  </div>
-                </div>
-                <div className="why-ach-item">
-                  <div className="why-ach-icon wa-green">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4>150+</h4>
-                    <p>Happy Clients</p>
-                  </div>
-                </div>
-                <div className="why-ach-item">
-                  <div className="why-ach-icon wa-purple">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M23 6l-9.5 9.5-5-5L1 18" />
-                      <path d="M17 6h6v6" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4>97%</h4>
-                    <p>Client Retention</p>
-                  </div>
-                </div>
-                <div className="why-ach-item">
-                  <div className="why-ach-icon wa-orange2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M4.5 16.5c-1.5 1.25-2.5 3.5-2.5 3.5s2.25-1 3.5-2.5M14 9l-6 6M9 4l-5 5M20 4a2 2 0 0 0-2-2h-3l-7 7v4h4l7-7V4Z" />
-                      <path d="M14 5h3v3" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4>10X</h4>
-                    <p>Average Growth</p>
-                  </div>
-                </div>
-              </div>
+
             </div>
 
             {/* Right side graph card */}
@@ -1110,38 +1004,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* ──────────────────────────────────────
-           SECTION 11 — OUR ACHIEVEMENTS
-           ────────────────────────────────────── */}
-        <section className="about-section section-dark">
-          <div className="grid-overlay"></div>
-          <div className="about-grid-content achievements-grid">
-            <div className="achievement-card">
-              <div className="achievement-number"><AnimatedCounter value="500+" /></div>
-              <div className="achievement-label">Projects Delivered</div>
-            </div>
-            <div className="achievement-card">
-              <div className="achievement-number"><AnimatedCounter value="150+" /></div>
-              <div className="achievement-label">Happy Clients</div>
-            </div>
-            <div className="achievement-card">
-              <div className="achievement-number"><AnimatedCounter value="97%" /></div>
-              <div className="achievement-label">Client Retention</div>
-            </div>
-            <div className="achievement-card">
-              <div className="achievement-number"><AnimatedCounter value="10X" /></div>
-              <div className="achievement-label">Average Growth</div>
-            </div>
-            <div className="achievement-card">
-              <div className="achievement-number"><AnimatedCounter value="15+" /></div>
-              <div className="achievement-label">Industries Served</div>
-            </div>
-            <div className="achievement-card">
-              <div className="achievement-number"><AnimatedCounter value="25+" /></div>
-              <div className="achievement-label">AI Engineers & Pros</div>
-            </div>
-          </div>
-        </section>
+        
 
         {/* ──────────────────────────────────────
            SECTION 12 — CLIENT TESTIMONIALS
@@ -1284,8 +1147,8 @@ export default function AboutPage() {
                 Partner with Digital Marketing TenX and experience predictable,<br />data-driven revenue and traffic growth.
               </p>
               <div className="cta-btns-premium">
-                <button className="btn-primary-premium">Book Strategy Call</button>
-                <button className="btn-outline-premium">Contact Us</button>
+                <button className="btn-primary-premium" onClick={() => window.dispatchEvent(new CustomEvent("trigger-consultation-modal"))}>Book Strategy Call</button>
+                <a href="/contact" className="btn-outline-premium">Contact Us</a>
               </div>
             </div>
           </div>
