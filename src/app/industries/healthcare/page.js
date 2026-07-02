@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import CTA from "@/components/CTA";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
+
 export const metadata = {
   title: "Healthcare Digital Marketing Company in Hyderabad | TenX",
   description: "Get more patients and increase appointment bookings with TenX's healthcare digital marketing services in Hyderabad. SEO for clinics, Google Ads, and local SEO.",
@@ -20,9 +21,7 @@ export default function HealthcarePage() {
             <p style={{ fontSize: "1.2rem", color: "#555", marginBottom: "30px" }}>
               Drive more patient appointments, build trust, and grow your clinic's online visibility with HIPAA-compliant digital marketing, Local SEO, and highly targeted Google Ads for healthcare professionals.
             </p>
-            <button className="btn-primary" onClick={() => { if(typeof window !== 'undefined') window.dispatchEvent(new CustomEvent("trigger-consultation-modal")); }}>
-              Book a Free Healthcare Growth Consultation
-            </button>
+            <CTA />
           </div>
         </section>
         

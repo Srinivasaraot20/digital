@@ -20,9 +20,7 @@ export default function RealEstatePage() {
             <p style={{ fontSize: "1.2rem", color: "#555", marginBottom: "30px" }}>
               Generate high-quality property leads, increase site visits, and boost sales with AI-powered Real Estate SEO, Facebook Ads for Builders, and localized Google Ads campaigns tailored for the Hyderabad market.
             </p>
-            <button className="btn-primary" onClick={() => { if(typeof window !== 'undefined') window.dispatchEvent(new CustomEvent("trigger-consultation-modal")); }}>
-              Get a Free Real Estate Marketing Audit
-            </button>
+            <CTA />
           </div>
         </section>
         

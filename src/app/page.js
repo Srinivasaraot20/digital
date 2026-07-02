@@ -12,7 +12,7 @@ const RecentBlogs = dynamic(() => import("@/components/RecentBlogs"), { ssr: tru
 const SEOContent = dynamic(() => import("@/components/SEOContent"), { ssr: true });
 const CTA = dynamic(() => import("@/components/CTA"), { ssr: true });
 const Footer = dynamic(() => import("@/components/Footer"), { ssr: true });
-import WhatsAppButton from "@/components/WhatsAppButtonClient";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 // Export metadata for Google & Bing search engine optimization + OpenGraph Social cards
 export const metadata = {
