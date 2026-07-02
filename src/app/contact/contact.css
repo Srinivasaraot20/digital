@@ -62,7 +62,7 @@
 }
 
 .con-title-center h2 {
-  font-size: 36px;
+  font-size: clamp(1.5rem, 3.8vw, 2.4rem);
   font-weight: 900;
   color: var(--con-text-dark);
   margin: 0 0 16px;
@@ -78,7 +78,7 @@
 
 @media (max-width: 768px) {
   .con-title-center h2 {
-    font-size: 28px;
+    font-size: clamp(1.2rem, 2.8vw, 1.8rem);
   }
 }
 
@@ -115,7 +115,7 @@
 }
 
 .con-hero-content h1 {
-  font-size: 48px;
+  font-size: clamp(2rem, 5vw, 3.2rem);
   font-weight: 900;
   line-height: 1.15;
   margin: 0 0 20px;
@@ -140,7 +140,7 @@
 
 @media (max-width: 768px) {
   .con-hero-content h1 {
-    font-size: 36px;
+    font-size: clamp(1.5rem, 3.8vw, 2.4rem);
   }
 }
 
@@ -253,14 +253,14 @@
 /* ─── 2. CONTACT INFORMATION CARDS ─── */
 .con-info-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
   gap: 30px;
   margin-bottom: 40px;
 }
 
 @media (max-width: 991px) {
   .con-info-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   }
 }
 
@@ -429,7 +429,7 @@
 
 .con-form-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   gap: 20px;
 }
 
@@ -498,13 +498,13 @@
 
 .con-checkbox-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
   gap: 12px;
 }
 
 @media (max-width: 768px) {
   .con-checkbox-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   }
 }
 
@@ -616,7 +616,7 @@
   height: 72px;
   background: #fff5ee;
   color: var(--con-orange);
-  font-size: 32px;
+  font-size: clamp(1.3rem, 3.2vw, 2rem);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -641,13 +641,13 @@
 /* ─── 7. WHY CONTACT US ─── */
 .con-why-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
   gap: 24px;
 }
 
 @media (max-width: 1024px) {
   .con-why-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   }
 }
 
@@ -697,7 +697,7 @@
 /* ─── 8. OFFICE GALLERY ─── */
 .con-gallery-slider {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
   gap: 24px;
 }
 
@@ -881,7 +881,7 @@
 }
 
 .con-cta-content h2 {
-  font-size: 38px;
+  font-size: clamp(1.6rem, 4vw, 2.5rem);
   font-weight: 900;
   color: #ffffff;
   margin-bottom: 20px;
@@ -897,7 +897,7 @@
 
 @media (max-width: 768px) {
   .con-cta-content h2 {
-    font-size: 28px;
+    font-size: clamp(1.2rem, 2.8vw, 1.8rem);
   }
 }
 
