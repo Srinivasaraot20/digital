@@ -90,7 +90,7 @@ To trigger any request, email our compliance officer at privacy@digitalmarketing
       icon: "📞",
       content: `If you have any questions, clarifications, or complaints regarding this privacy framework, contact us:
 - **Company Name**: Digital Marketing TenX
-- **Address**: # 39 to 44, Level 4, Gumidelli Towers, Near Prakash Nagar Metro Station, Begumpet, Hyderabad - 500016, India.
+- **Address**: Level 4, Gumidelli Towers, 39 to 44, Old Patigadda,<br />Prakash Nagar, Begumpet,<br />Hyderabad, Telangana 500016
 - **Phone Number**: +91 93922 51739
 - **Support Email**: info@digitalmarketingtenx.com
 - **Website URL**: https://digitalmarketingtenx.com`
