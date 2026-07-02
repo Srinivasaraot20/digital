@@ -349,7 +349,7 @@
 
 .stat-row {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   gap: 16px;
   margin: 28px 0;
 }
@@ -625,13 +625,13 @@
 
 .related-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
   gap: 20px;
 }
 
 @media (max-width: 1024px) {
   .related-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   }
 }
 
@@ -929,7 +929,7 @@
 
 .form-row {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   gap: 20px;
 }
 

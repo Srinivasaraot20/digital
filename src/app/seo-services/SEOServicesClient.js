@@ -1545,46 +1545,6 @@ Please contact me for the audit. Thank you!`;
         </div>
       </section>
 
-      {/* ── 10. CASE STUDIES ── */}
-      <section className="seo-section seo-section-light">
-        <div className="seo-wrap">
-          <div className="seo-sec-header reveal-element">
-            <span className="eyebrow">🏆 Success Stories</span>
-            <h2>Our Featured Case Studies</h2>
-            <p>
-              Explore how we audited, restructured, and scaled search traffic for businesses across industries, delivering compounding revenue.
-            </p>
-          </div>
-
-          <div className="seo-cases-grid">
-            {caseStudies.map((cs, idx) => (
-              <div key={idx} className="seo-case-card reveal-element">
-                <div className="seo-case-header">
-                  <span className="seo-case-tag">{cs.industry}</span>
-                  <span style={{ fontSize: "13px", fontWeight: "800", color: "var(--seo-dark)" }}>{cs.client}</span>
-                </div>
-                <h3>Compounding Organic Growth Campaign</h3>
-                <div className="seo-case-desc">
-                  <span className="seo-case-block-lbl">Challenge</span>
-                  <p style={{ marginBottom: "12px" }}>{cs.challenges}</p>
-                  <span className="seo-case-block-lbl">Strategy</span>
-                  <p>{cs.strategy}</p>
-                </div>
-
-                <div className="seo-case-metrics">
-                  {cs.results.map((r, rIdx) => (
-                    <div key={rIdx} className="seo-case-metric-item">
-                      <span className="seo-case-m-val">{r.val}</span>
-                      <span className="seo-case-m-lbl" style={{ display: "block" }}>{r.lbl}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ── 11. SEO AUDIT DASHBOARD DEMO ── */}
       <section className="seo-section seo-section-white">
         <div className="seo-wrap">
