@@ -20,9 +20,8 @@
 }
 
 @keyframes shine {
-  100% {
-    left: 125%;
-  }
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(225%, 0, 0); }
 }
 
 body{font-family:'Inter',sans-serif;color:#1a1a2e;background:#fff;overflow-x:hidden}
@@ -933,21 +932,45 @@ a{text-decoration:none;color:inherit}
 }
 .cta-card-buttons {
   display: flex;
-  gap: 16px;
+  gap: clamp(12px, 2vw, 16px);
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+@media (min-width: 640px) {
+  .cta-card-buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+.cta-card-buttons .btn-primary-filled,
+.cta-card-buttons .btn-secondary-outlined {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: clamp(12px, 2vw, 16px) clamp(20px, 3vw, 28px);
+  border-radius: 8px;
+  font-size: clamp(14px, 1.5vw, 15px);
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+@media (min-width: 640px) {
+  .cta-card-buttons .btn-primary-filled,
+  .cta-card-buttons .btn-secondary-outlined {
+    width: fit-content;
+    max-width: 100%;
+  }
 }
 .cta-card-buttons .btn-primary-filled {
   background: #ff6b00;
   color: #fff;
-  padding: 14px 28px;
-  border-radius: 8px;
-  font-size: 14.5px;
-  font-weight: 700;
   border: none;
-  cursor: pointer;
   box-shadow: 0 4px 14px rgba(255, 107, 0, 0.2);
-  transition: all 0.3s ease;
 }
 .cta-card-buttons .btn-primary-filled:hover {
   background: #e55d00;
@@ -957,13 +980,7 @@ a{text-decoration:none;color:inherit}
 .cta-card-buttons .btn-secondary-outlined {
   background: #fff;
   color: #ff6b00;
-  padding: 14px 28px;
-  border-radius: 8px;
-  font-size: 14.5px;
-  font-weight: 700;
   border: 1px solid #ff6b00;
-  cursor: pointer;
-  transition: all 0.3s ease;
 }
 .cta-card-buttons .btn-secondary-outlined:hover {
   background: #fff5ee;
@@ -971,29 +988,34 @@ a{text-decoration:none;color:inherit}
 }
 .cta-deco-icon {
   position: absolute;
-  z-index: 2;
+  z-index: 1; /* Below text (which is z-index 2) */
   pointer-events: none;
   animation: ctaFloat 6s ease-in-out infinite;
-  opacity: 0.85;
+  opacity: 0.2; /* reduced opacity to prevent overlapping text readability issues */
+}
+@media (min-width: 768px) {
+  .cta-deco-icon {
+    opacity: 0.85; /* restore on larger screens where there is space */
+  }
 }
 .cta-deco-1 {
-  top: 35%;
-  left: 8%;
+  top: 5%;
+  left: 2%;
   animation-delay: 0s;
 }
 .cta-deco-2 {
-  bottom: 12%;
-  left: 20%;
+  bottom: 5%;
+  left: 5%;
   animation-delay: 1.5s;
 }
 .cta-deco-3 {
-  top: 18%;
-  right: 10%;
+  top: 5%;
+  right: 2%;
   animation-delay: 3s;
 }
 .cta-deco-4 {
-  bottom: 22%;
-  right: 12%;
+  bottom: 5%;
+  right: 5%;
   animation-delay: 4.5s;
 }
 @keyframes ctaFloat {
@@ -1017,7 +1039,12 @@ footer ul li a:hover{color:#ff6b00}
 .contact-item span:first-child{color:#ff6b00;flex-shrink:0;margin-top:2px}
 
 /* ── FLOATING ── */
-.float-btns{position:fixed;right:clamp(12px, 3vw, 24px);bottom:clamp(60px, 8vh, 100px);display:flex;flex-direction:column;gap:clamp(8px, 1.5vh, 14px);z-index:999}
+.float-btns{position:fixed;right:clamp(12px, 3vw, 24px);bottom:clamp(20px, 4vh, 40px);display:flex;flex-direction:column;gap:clamp(8px, 1.5vh, 14px);z-index:999}
+@media (max-width: 768px) {
+  .float-btns {
+    bottom: clamp(60px, 8vh, 100px); /* Push up on mobile to avoid overlapping footer/CTA */
+  }
+}
 .float-btn{
   width:clamp(40px, 5vw, 50px);
   height:clamp(40px, 5vw, 50px);

@@ -1978,10 +1978,7 @@ export default function GoogleAdsPage() {
           <div className="ga-cta-glow-1" />
           <div className="ga-cta-glow-2" />
 
-          <div className="ga-cta-float cf1">📊 ROAS: 4.8x this month</div>
-          <div className="ga-cta-float cf2">🎯 215 leads generated</div>
-          <div className="ga-cta-float cf3">↓42% CPC reduction</div>
-          <div className="ga-cta-float cf4">✅ Google Certified Partner</div>
+          
 
           <div className="ga-cta-content">
             <div className="ga-cta-badge">

@@ -25,7 +25,7 @@
 }
 
 .legal-section {
-  padding: 60px 40px;
+  padding: clamp(2rem, 4vw, 4rem) clamp(1rem, 4vw, 3rem);
   position: relative;
 }
 
@@ -222,7 +222,7 @@
 /* ─── DOUBLE-COLUMN CONTENT CONTAINER ─── */
 .legal-content-grid {
   display: grid;
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
   gap: 48px;
   align-items: start;
 }
@@ -360,7 +360,7 @@
 }
 
 .legal-card h2 {
-  font-size: 24px;
+  font-size: clamp(1.1rem, 2.4vw, 1.5rem);
   font-weight: 800;
   color: var(--leg-navy);
   margin: 0 0 20px;
@@ -429,7 +429,7 @@
 
 .legal-trust-layout {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
   gap: 60px;
   align-items: center;
 }
@@ -443,7 +443,7 @@
 }
 
 .legal-trust-content h2 {
-  font-size: 32px;
+  font-size: clamp(1.3rem, 3.2vw, 2rem);
   font-weight: 900;
   color: var(--leg-navy);
   margin: 0 0 16px;
@@ -467,7 +467,7 @@
 
 .legal-trust-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   gap: 20px;
 }
 

@@ -1065,75 +1065,7 @@ export default function WhatsAppAutomationPage() {
           </div>
         </section>
 
-        {/* SECTION 11: RESULTS STRIP */}
-        <section className="wa-results-strip-section">
-          <div className="wa-grid-bg" style={{ opacity: 0.05 }}></div>
-          <div className="wa-results-grid">
-            <div className="wa-result-card-inner">
-              <div className="wa-result-number">&lt; 5s</div>
-              <div className="wa-result-label">Average Response Time</div>
-            </div>
-            <div className="wa-result-card-inner">
-              <div className="wa-result-number"><AnimatedCounter value="95%" /></div>
-              <div className="wa-result-label">Customer Satisfaction</div>
-            </div>
-            <div className="wa-result-card-inner">
-              <div className="wa-result-number"><AnimatedCounter value="3X" /></div>
-              <div className="wa-result-label">Lead Conversion Lift</div>
-            </div>
-            <div className="wa-result-card-inner">
-              <div className="wa-result-number"><AnimatedCounter value="80%" /></div>
-              <div className="wa-result-label">Automation Coverage</div>
-            </div>
-            <div className="wa-result-card-inner">
-              <div className="wa-result-number">24/7</div>
-              <div className="wa-result-label">System Availability</div>
-            </div>
-          </div>
-        </section>
-
-        {/* SECTION 12: CASE STUDIES */}
-        <section className="wa-section wa-section-white">
-          <div className="wa-grid-content">
-            <div className="wa-title-centered">
-              <span className="eyebrow">Success Stories</span>
-              <h2>Real Business Results from WhatsApp Automation</h2>
-              <p>
-                Read how our client partners achieved scalable conversions and optimized response times.
-              </p>
-            </div>
-
-            <div className="wa-cases-grid">
-              {caseStudies.map((cs, idx) => (
-                <div className="wa-case-study-card wa-glass-card" key={idx}>
-                  <span className="wa-cs-tag">{cs.tag}</span>
-                  <h3>{cs.title}</h3>
-                  <p>{cs.desc}</p>
-                  
-                  <div style={{ borderTop: "1px dashed var(--wa-border)", padding: "14px 0", fontSize: "12px" }}>
-                    <strong>Problem:</strong> {cs.problem}<br />
-                    <strong style={{ display: "block", marginTop: "6px" }}>Solution:</strong> {cs.solution}
-                  </div>
-
-                  <div className="wa-cs-metrics">
-                    <div className="wa-cs-m-item">
-                      <span className="wa-cs-m-lbl">KPI Result 1</span>
-                      <span className="wa-cs-m-val">{cs.results[0]}</span>
-                    </div>
-                    <div className="wa-cs-m-item">
-                      <span className="wa-cs-m-lbl">KPI Result 2</span>
-                      <span className="wa-cs-m-val">{cs.results[1]}</span>
-                    </div>
-                    <div className="wa-cs-m-item">
-                      <span className="wa-cs-m-lbl">KPI Result 3</span>
-                      <span className="wa-cs-m-val">{cs.results[2]}</span>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        {/* SECTION 11 & 12 REMOVED */}
 
         {/* SECTION 13: FAQ ACCORDION */}
         <section className="wa-section wa-section-light">
@@ -1182,11 +1114,7 @@ export default function WhatsAppAutomationPage() {
                 </div>
               </div>
 
-              {/* Decos bubbles */}
-              <div className="wa-cta-deco-bubble c1">Hello! How can we help?</div>
-              <div className="wa-cta-deco-bubble c2">₹14,999 due tomorrow</div>
-              <div className="wa-cta-deco-bubble c3">diwali offer! 🎇</div>
-              <div className="wa-cta-deco-bubble c4">Schedule booked!</div>
+              
             </div>
           </div>
         </section>

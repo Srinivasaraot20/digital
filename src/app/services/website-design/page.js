@@ -1329,46 +1329,7 @@ export default function WebsiteDesignPage() {
         {/* SECTION 10: RESULTS STATS */}
 
 
-        {/* SECTION 11: TESTIMONIALS */}
-        <section className="w-section w-section-light">
-          <div className="w-grid-content">
-            <div className="w-title-centered">
-              <span className="eyebrow">Client Feedback</span>
-              <h2>What Business Leaders Say About Our Service</h2>
-              <p>
-                Read reviews from clients who upgraded their business models with custom high-converting web applications.
-              </p>
-            </div>
-
-            <div className="w-testimonials-container">
-              {/* Google Review Badge Widget Placeholder */}
-              <div className="w-reviews-slider-card">
-                <div className="w-review-stars">
-                  {"★".repeat(testimonials[activeTestimonial].stars)}
-                </div>
-                <p className="w-review-text">"{testimonials[activeTestimonial].text}"</p>
-                <h4 className="w-review-author">{testimonials[activeTestimonial].author}</h4>
-                <p className="w-review-role">{testimonials[activeTestimonial].role}</p>
-                <div style={{ display: "flex", gap: "8px", justifyContent: "center", marginTop: "24px" }}>
-                  {testimonials.map((_, idx) => (
-                    <button 
-                      key={idx}
-                      onClick={() => setActiveTestimonial(idx)}
-                      style={{ 
-                        width: "10px", 
-                        height: "10px", 
-                        borderRadius: "50%", 
-                        border: "none", 
-                        backgroundColor: activeTestimonial === idx ? "var(--w-accent-orange)" : "#cbd5e1",
-                        cursor: "pointer"
-                      }}
-                    />
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* SECTION 11: TESTIMONIALS (REMOVED) */}
 
         {/* SECTION 12: PRICING PACKAGES */}
         <section className="w-section w-section-white">

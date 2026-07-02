@@ -1277,55 +1277,7 @@ export default function SocialMediaMarketingPage() {
         </div>
       </section>
 
-      {/* 13. CLIENT TESTIMONIALS */}
-      <section className="smm-section" style={{ backgroundColor: "#ffffff" }}>
-        <div className="smm-sec-header reveal-element">
-          <span className="eyebrow">Client Feedback</span>
-          <h2>Success Stories From Brands Like Yours</h2>
-          <p>Read about the results we deliver every single month.</p>
-        </div>
-        <div className="smm-testi-grid reveal-element">
-          <div className="glass-card smm-testi-card">
-            <div className="smm-stars">★★★★★</div>
-            <p className="smm-testi-text">
-              "We saw a 4X increase in qualified leads within 60 days of launching Instagram Reels and custom Lead Ads with TenX."
-            </p>
-            <div className="smm-testi-user">
-              <div className="smm-testi-avatar" style={{ backgroundColor: "#e0f2fe" }}></div>
-              <div>
-                <span className="smm-testi-name">Ananth Sharma</span>
-                <div className="smm-testi-title">Founder, Fashion Hub</div>
-              </div>
-            </div>
-          </div>
-          <div className="glass-card smm-testi-card">
-            <div className="smm-stars">★★★★★</div>
-            <p className="smm-testi-text">
-              "The content calendar planning has completely freed up our schedule. Their visual carousel designs are top-tier."
-            </p>
-            <div className="smm-testi-user">
-              <div className="smm-testi-avatar" style={{ backgroundColor: "#faf5ff" }}></div>
-              <div>
-                <span className="smm-testi-name">Prerna Gupta</span>
-                <div className="smm-testi-title">COO, HealthVeda Clinics</div>
-              </div>
-            </div>
-          </div>
-          <div className="glass-card smm-testi-card">
-            <div className="smm-stars">★★★★★</div>
-            <p className="smm-testi-text">
-              "B2B lead generation on LinkedIn used to be highly expensive. Their authoritative slide decks solved that."
-            </p>
-            <div className="smm-testi-user">
-              <div className="smm-testi-avatar" style={{ backgroundColor: "#fff7ed" }}></div>
-              <div>
-                <span className="smm-testi-name">Rahul Kumar</span>
-                <div className="smm-testi-title">Marketing Director, SaaSFlow</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* 13. CLIENT TESTIMONIALS (REMOVED) */}
 
       {/* 14. WHY CHOOSE US */}
       <section className="smm-section">
@@ -1374,43 +1326,7 @@ export default function SocialMediaMarketingPage() {
         <div className="cta-card-wrapper">
           <div className="cta-grid-bg"></div>
           
-          {/* Floating Icons */}
-          <div className="cta-deco-icon cta-deco-1">
-            <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#ff6b00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <line x1="18" y1="20" x2="18" y2="10"></line>
-              <line x1="12" y1="20" x2="12" y2="4"></line>
-              <line x1="6" y1="20" x2="6" y2="14"></line>
-              <path d="M3 18l6-6 4 4 8-8"></path>
-              <polyline points="17 8 21 8 21 12"></polyline>
-            </svg>
-          </div>
-          
-          <div className="cta-deco-icon cta-deco-2">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ff6b00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <circle cx="18" cy="5" r="3"></circle>
-              <circle cx="6" cy="12" r="3"></circle>
-              <circle cx="18" cy="19" r="3"></circle>
-              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
-              <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
-            </svg>
-          </div>
-          
-          <div className="cta-deco-icon cta-deco-3">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#b0c4de" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-              <path d="M7 17l4-4 4 4 6-6"></path>
-              <polyline points="18 11 21 11 21 14"></polyline>
-            </svg>
-          </div>
-          
-          <div className="cta-deco-icon cta-deco-4">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="10" cy="10" r="7" stroke="#64748b" strokeWidth="2" />
-              <path d="M6 12L9 9L11 11L14 8" stroke="#ff6b00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-              <path d="M15 15L21 21" stroke="#ff6b00" strokeWidth="3" strokeLinecap="round" />
-            </svg>
-          </div>
-
+            
           <div className="cta-card-content">
             <h2>Ready to Grow Your Brand on Social Media?</h2>
             <p>
