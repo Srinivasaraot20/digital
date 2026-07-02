@@ -38,6 +38,11 @@ export default function Footer() {
             <li><Link href="/about">About Us</Link></li>
             <li><Link href="/contact">Contact Us</Link></li>
           </ul>
+          <h4 style={{ marginTop: "20px" }}>Industries</h4>
+          <ul>
+            <li><Link href="/industries/real-estate">Real Estate</Link></li>
+            <li><Link href="/industries/healthcare">Healthcare</Link></li>
+          </ul>
         </div>
         <div>
           <h4>Services</h4>
@@ -45,7 +50,7 @@ export default function Footer() {
             <li><Link href="/seo-services">SEO</Link></li>
             <li><Link href="/services/google-ads">Google Ads</Link></li>
             <li><Link href="/services/e-commerce-marketing">E-commerce Marketing</Link></li>
-            <li><Link href="/services#social-media">Social Media Marketing</Link></li>
+            <li><Link href="/services/social-media-marketing">Social Media Marketing</Link></li>
             <li><Link href="/services/website-design">Website Design</Link></li>
             <li><Link href="/services/whatsapp-automation">WhatsApp Automation</Link></li>
           </ul>

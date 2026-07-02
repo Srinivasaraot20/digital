@@ -84,6 +84,8 @@ export default function Hero() {
               height={700} 
               className="globe-img"
               priority
+              fetchPriority="high"
+              sizes="100vw"
             />
           </div>
         </div>

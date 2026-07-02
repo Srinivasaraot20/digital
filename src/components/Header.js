@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -55,14 +55,14 @@ export default function Header() {
     };
   }, [isMobileMenuOpen]);
 
-  const handleLinkClick = () => {
+  const handleLinkClick = useCallback(() => {
     setIsMobileMenuOpen(false);
-  };
+  }, []);
 
-  const toggleAccordion = (e) => {
+  const toggleAccordion = useCallback((e) => {
     e.preventDefault();
-    setIsAccordionOpen(!isAccordionOpen);
-  };
+    setIsAccordionOpen((prev) => !prev);
+  }, []);
 
   return (
     <>
@@ -129,6 +129,8 @@ export default function Header() {
               ))}
             </div>
           </div>
+
+
 
           <Link href="/blog" className={pathname.startsWith('/blog') ? 'active' : ''} onClick={handleLinkClick}>Blog</Link>
           <Link href="/contact">Contact</Link>
@@ -217,6 +219,8 @@ export default function Header() {
                 ))}
               </div>
             </div>
+
+
 
             <Link href="/blog" onClick={handleLinkClick} className={pathname.startsWith('/blog') ? 'active' : ''}>Blog</Link>
             <Link href="/contact" onClick={handleLinkClick}>Contact</Link>
