@@ -1006,61 +1006,6 @@ export default function AboutPage() {
 
         
 
-        {/* ──────────────────────────────────────
-           SECTION 12 — CLIENT TESTIMONIALS
-           ────────────────────────────────────── */}
-        <section className="about-section section-light">
-          <div className="about-grid-content">
-            <div className="sec-header">
-              <span className="eyebrow">⭐ CLIENT SUCCESS STORIES</span>
-              <h2>What Our Growth Partners Say</h2>
-            </div>
-
-            <div className="testimonials-row">
-              <div className="review-card">
-                <div className="review-stars">★★★★★</div>
-                <p className="review-text">
-                  "TenX scaled our medical consultation leads by 12X within four months. Their AI automation saved us countless hours of manual work."
-                </p>
-                <div className="review-author">
-                  <div className="author-avatar">Dr. R</div>
-                  <div className="author-info">
-                    <h4>Dr. Rohan Sen</h4>
-                    <p>Founder, Apex Healthcare</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="review-card">
-                <div className="review-stars">★★★★★</div>
-                <p className="review-text">
-                  "The live growth dashboard they set up is a game-changer. We can trace every rupee spent to an actual customer acquisition."
-                </p>
-                <div className="review-author">
-                  <div className="author-avatar">M.K</div>
-                  <div className="author-info">
-                    <h4>Meera Kapoor</h4>
-                    <p>CMO, Sparkle E-Commerce</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="review-card">
-                <div className="review-stars">★★★★★</div>
-                <p className="review-text">
-                  "Next.js web development combined with their SEO strategies pushed our site traffic to 25k monthly visits in record time."
-                </p>
-                <div className="review-author">
-                  <div className="author-avatar">A.K</div>
-                  <div className="author-info">
-                    <h4>Anil Kothari</h4>
-                    <p>Director, Elevate Education</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* ──────────────────────────────────────
            SECTION 13 — FAQ ACCORDION
@@ -1103,44 +1048,7 @@ export default function AboutPage() {
               <div className="cta-grid-overlay"></div>
               <div className="cta-radial-glow"></div>
               
-              {/* Floating 3D-like icons */}
-              <div className="cta-float-icon icon-tl">
-                <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="10" y="44" width="8" height="10" rx="2" fill="rgba(255, 107, 0, 0.1)" stroke="#ff6b00" strokeWidth="2" />
-                  <rect x="22" y="32" width="8" height="22" rx="2" fill="rgba(255, 107, 0, 0.2)" stroke="#ff6b00" strokeWidth="2" />
-                  <rect x="34" y="20" width="8" height="34" rx="2" fill="rgba(255, 107, 0, 0.3)" stroke="#ff6b00" strokeWidth="2" />
-                  <path d="M14 42L28 26L42 12" stroke="#ff6b00" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" />
-                  <path d="M32 12H42V22" stroke="#ff6b00" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </div>
-
-              <div className="cta-float-icon icon-bl">
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="28" cy="12" r="4" stroke="#ff6b00" strokeWidth="2" fill="rgba(255, 107, 0, 0.1)" />
-                  <circle cx="12" cy="20" r="4" stroke="#ff6b00" strokeWidth="2" fill="rgba(255, 107, 0, 0.1)" />
-                  <circle cx="28" cy="28" r="4" stroke="#ff6b00" strokeWidth="2" fill="rgba(255, 107, 0, 0.1)" />
-                  <line x1="15.5" y1="18.5" x2="24.5" y2="13.5" stroke="#ff6b00" strokeWidth="2" />
-                  <line x1="15.5" y1="21.5" x2="24.5" y2="26.5" stroke="#ff6b00" strokeWidth="2" />
-                </svg>
-              </div>
-
-              <div className="cta-float-icon icon-tr">
-                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="4" y="4" width="40" height="40" rx="8" stroke="rgba(0,0,0,0.03)" strokeWidth="1" fill="rgba(255,255,255,0.4)" />
-                  <path d="M12 36V12" stroke="#cbd5e1" strokeWidth="2" strokeLinecap="round" />
-                  <path d="M12 36H36" stroke="#cbd5e1" strokeWidth="2" strokeLinecap="round" />
-                  <path d="M16 30L22 22L28 26L34 16" stroke="#a0aec0" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-                  <path d="M30 16H34V20" stroke="#a0aec0" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </div>
-
-              <div className="cta-float-icon icon-br">
-                <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="32" cy="32" r="18" stroke="#a0aec0" strokeWidth="2.5" fill="rgba(255, 255, 255, 0.7)" />
-                  <line x1="45" y1="45" x2="60" y2="60" stroke="#ff6b00" strokeWidth="5.5" strokeLinecap="round" />
-                  <path d="M24 38 L30 30 L36 34 L40 26" stroke="#ff6b00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </div>
+              {/* Floating 3D-like icons Removed */}
               
               <h2 className="cta-title-premium">Let's Grow Your Business Together</h2>
               <p className="cta-subtitle-premium">

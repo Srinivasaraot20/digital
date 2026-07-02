@@ -97,7 +97,7 @@
   }
 }
 .admin-title-area h1 {
-  font-size: 28px;
+  font-size: clamp(1.2rem, 2.8vw, 1.8rem);
   font-weight: 900;
   color: #fff;
   letter-spacing: -0.5px;
@@ -136,7 +136,7 @@
   letter-spacing: 0.5px;
 }
 .admin-stat-value {
-  font-size: 32px;
+  font-size: clamp(1.3rem, 3.2vw, 2rem);
   font-weight: 850;
   color: #fff;
 }
@@ -289,7 +289,7 @@
 }
 .admin-detail-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   gap: 16px;
   margin-bottom: 24px;
 }
